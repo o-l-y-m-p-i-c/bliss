@@ -1,0 +1,1121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+@font-face {
+    font-family: 'Roca' ;
+    src: url('./fonts/Roca/RocaTwo-Lt.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Becky Extra';
+    src: url('./fonts/Becky/Becky-ExtraBoldItalic.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+:root{
+    /* fonts */
+    --font-quick: 'Quicksand' ;
+    --font-becky: 'Becky';
+    --font-rocatwo: 'Roca Two';
+    --font-motserrat: 'Montserrat';
+
+    /* weight */
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --font-wight-ex-bold: 800;
+
+    /* sizes */
+
+
+    /* bg colors */
+
+
+    /* colors */
+    --btn-bg-pink:#e4435f;
+    --color-purple:#85329a;
+    --color-blue:#224289;
+    --color-light-blue:#4d98c2;
+    --color-orange:#df6a30;
+}
+.svg-sprite{
+    display: none;
+}
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+body{
+    height: 100%;margin: 0;padding:0;background-color: #f5dfce;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+}
+main{
+    flex: 1 0 auto;
+}
+footer{
+    background-color: #406ba8;
+    flex: 0 0 auto;
+}
+/* modif */
+.--textAlignCenter{
+    text-align: center;
+}
+
+.margin60px{
+    margin-top:60px
+}
+.button{
+    position: relative;
+    padding:16px  43px;
+    display: inline-block;
+    font-family: 'Roca';
+    text-decoration: none;
+    font-size: 23px;
+    
+}
+.btn-red, .btn-blue{
+    color: #fff;
+    z-index: 1;
+}
+.btn-blue{
+    font-family: var(--font-quick);
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold)
+}
+.btn-blue::before{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 4px;
+    left:4px;
+    background-color:var(--color-purple);z-index: -2;
+    transition: background-color 200ms linear;
+}
+.btn-blue::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color:#13c0d7;
+    transition: background-color 200ms linear;
+}
+.btn-blue:hover::before{
+    background-color:#13c0d7;
+}
+.btn-blue:hover::after{
+    background-color:var(--color-purple)
+}
+.btn-red::before{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 4px;
+    left:4px;
+    background-color:#416ba8;z-index: -2;
+    transition: background-color 200ms linear;
+}
+.btn-red::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color:var(--btn-bg-pink);
+    transition: background-color 200ms linear;
+}
+.btn-red:hover::before{
+    background-color:var(--btn-bg-pink);
+}
+.btn-red:hover::after{
+    background-color:#416ba8
+}
+.btn-purple{
+    color: #fff;
+    z-index: 1;
+}
+.btn-purple::before{
+    content:'';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 4px;
+    left:4px;
+    background-color:#4d98c2;z-index: -2;
+    transition: background-color 200ms linear;
+}
+.btn-purple:hover::before{
+    background-color:var(--color-purple);z-index: -2;
+}
+.btn-purple:hover::after{
+    background-color:#4d98c2;
+}
+.btn-purple::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color:var(--color-purple);transition: background-color 200ms linear;
+}
+.btn-purple.btn-bg-red::before{
+    background-color: var(--btn-bg-pink);
+}
+.btn-purple.btn-bg-red:hover::before{
+    background-color: var(--color-purple);
+}
+.btn-purple.btn-bg-red:hover::after{
+    background-color: var(--btn-bg-pink);
+}
+.--colorBlue{
+    fill:var(--color-blue);
+    color: var(--color-blue)
+}
+.--colorPing{
+
+}
+.--colorLightBlue{
+    fill: #13c0d7;
+    color: #13c0d7;
+}
+.--bg-color-blue{
+    background-color: var(--color-blue)
+}
+.--bg-color-pink{
+    background-color: var(--btn-bg-pink)
+}
+.--bg-color-purple{
+    background-color: var(--color-purple);
+}
+.--bg-color-yellow{
+    background-color: #FED256;
+}
+.--colorWhite{
+    color: #fff;
+    fill: #fff;    
+}
+.--bgColorWhite{
+    background-color: #fff;
+}
+.--upperCase{
+    text-transform: uppercase;
+}
+.--title{
+    font-family: "Becky Extra";
+}
+
+/* 
+    paddings
+*/
+.paddingTop{
+    padding-top:190px
+}
+
+.leftPadding{
+
+}
+
+.mobilePadding{
+
+}
+
+.mainPadding{
+    padding-left: 9.8vw;
+    padding-right: 9.8vw;
+}
+.headerPadding{
+    padding: 30px 60px;
+}
+.footerPadding{
+    box-sizing: border-box;
+    padding-left: 9.8vw;
+    padding-right: 9.8vw;
+}
+/* 
+    end paddings
+*/
+
+/* header */
+
+.cc-announcement__inner{
+    padding: 15px 20px;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-medium);
+}
+.header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    transition: background-color 300ms linear;
+}
+.header-right{
+    justify-content: flex-end;
+}
+.header-right__item.cart svg{
+    fill:#fff;
+}
+.scrolled .header-right__item.cart svg{
+    fill:black
+}
+.header ul, .header nav ul{
+    display: flex;
+    padding:0;margin: 0;
+    column-gap: 35px;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.header ul a{
+    text-decoration: none;
+    color:white;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-bold);
+}
+
+.scrolled .header{
+    background-color:#fff;
+
+}
+.scrolled .header a{
+    color:black;
+}
+.sandwich-wrapper{
+    display:none
+}
+.sandwich{
+    width: 23px;
+    height:17px;
+    cursor: pointer;
+}
+.sandwich__line{
+    /* position: relative; */
+    display: block;
+    margin-top:5px;
+    width: 23px;
+    height:2px;
+    background-color: #fff;
+    transition: 0.3s linear all;
+}
+.sandwich.active .sandwich__line:first-child{
+    transform: rotate(45deg) translateY(200%) translateX(25%);
+}
+.sandwich.active .sandwich__line:nth-child(2){
+    opacity:0;
+}
+.sandwich.active .sandwich__line:last-child{
+    transform: rotate(-45deg) translateY(-200%) translateX(25%);
+}
+.logo-wrap svg{
+    width:230px;
+    height: 83px;
+}
+/* header media */
+@media screen and (max-width:1180px) {
+    .sandwich-wrapper{
+        display: block;
+    }
+}
+@media screen and (max-width:1180px) {
+    .header nav{
+        display: none;
+    }
+
+}
+@media  screen and (max-width:770px) {
+    .headerPadding{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width:670px) {
+    .header-right__item.account{
+        display: none;
+    }
+    .logo-wrap{
+        width: 100%;
+    }
+    .logo-wrap svg{
+        width: 100%;
+        max-width: 100%;
+        height:50px;
+    }
+}
+
+
+
+
+
+/* header end */
+
+/* footer */
+.footer{
+    display: flex; grid-template-columns: repeat(5,1fr); max-width:100%; padding-top:100px;padding-bottom:25px;flex-wrap: wrap; row-gap: 60px; column-gap: 10px;
+}
+.footer__column{
+    flex-basis: 20%;
+}
+.footer__form-warp{
+    display: flex; justify-content: flex-end;
+    /* flex-basis:35% */
+}
+.footer__form-warp form{
+    width: 100%;max-width: 100%;
+}
+
+.footer__form-warp input{
+    width: 100%;
+}
+.footer__form-warp article{
+    line-height: 180%;
+}
+
+.footer__rights{
+    display:none;
+    flex-basis: 100%;
+    color:#fff;
+    text-align: center;font-family: var(--font-motserrat);
+    font-weight: var(--font-weight-regular);
+}
+.footer__rights__top{
+    line-height:180%;
+    font-size:18px;
+}
+.footer__rights__bottom{
+    margin-top:40px;
+    font-size:16px
+}
+.footer ul {
+    margin: 0;
+    padding: 0;
+    padding-top:50px;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a,.footer h4, .footer article, .footer svg{
+    text-decoration: none;
+    color: #ffff;fill:#fff;font-family: var(--font-motserrat);
+}
+.footer h4{
+    margin:0;
+    font-size:22px; font-weight:var(--font-weight-medium)
+}
+.footer ul li a , .footer article{
+    font-size:20px; font-weight:var(--font-weight-regular);
+}
+
+.footer form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.footer ul li{
+    padding-top:15px
+}
+.footer ul li:first-child{
+    padding-top:0s
+}
+.footer form button span{
+    margin-left: 20px;
+    font-size:18px; font-weight:var(--font-weight-regular);font-family: var(--font-motserrat);
+}
+.footer form input[placeholder]{
+    font-size:20px; font-weight:var(--font-weight-regular);font-family: var(--font-quick);
+}
+.supports-list{
+    display: flex;
+    column-gap: 25px;
+}
+.footer__form-warp__input{
+    display: flex;
+}
+.footer__form-warp__input input{
+    border: none;color:#fff; padding: 20px 20px; border-bottom: 1px solid #fff; background: none;
+}
+.footer__form-warp__input button{
+    display: flex; align-items: center; border: none;background:none
+}
+.footer__form-warp__input button span{
+    padding-right: 17px; color:#fff
+}
+
+@media screen and (max-width: 1200px) {
+    .footer{
+        justify-content: space-between;
+    }
+    .footer__column{
+        flex-basis:40%;
+    }
+    .footer__form-warp{
+        flex-basis:100%;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width:480px){
+    .footer__rights{
+        display:block;
+    }
+    .footer__form-warp{
+        text-align: center;
+    }
+    .footer__column{
+        flex-basis:100%;
+        text-align:center;
+    }
+    .footer__form-warp input{
+        width: 100%;border-radius: 0;
+    }
+    
+    .supports-list{
+        justify-content: center;
+    }
+}
+
+
+/* end footer */
+
+
+
+
+
+
+
+/* index page */
+.banner-wrapper{
+    box-sizing: border-box;
+    position: relative;
+    min-height:100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.banner-wrapper::after{
+    content:'';
+    /* background-color: #85329a; */
+    /* position:absolute; */
+    /* width: 100%; */
+    /* height: 200px; */
+    /* clip-path: url(#svgPath); */
+    /* mask-size: 100% 100%; */
+    /* path-fill: url(#svgPath) */
+    bottom: -1px;
+}
+.banner-content{
+    padding-top: 215px;padding-bottom: 170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.banner-h1{
+    font-size: 57px;
+    /* font-size:5vw; */
+    font-family: 'Becky Extra';
+    /* color:#fff; */
+    margin: 0;
+}
+.banner-content__img-wrapper{
+    padding-top:90px;
+}
+.banner-content__img-wrapper{
+    padding-left: 24vw;
+    padding-right: 24vw;
+    height:120%;
+    /* width: 27.96vw; */
+}
+.banner-content__img-wrapper img{
+    width: 100%;
+}
+
+@media screen and (max-width:670px) {
+    .banner-h1{
+        font-size: 47px;
+    }
+    .banner-content{
+        padding-top:170px
+    }
+}
+/* end index page */
+
+
+
+
+/* ------------------------------ 
+            MINDFULNESS
+-------------------------------*/
+
+.banner-mindfulness .banner-content{
+    max-width:790px;
+    width: 100%;
+    padding-left: 20px;padding-right: 20px;
+}
+.banner-mindfulness .banner-content p{
+    margin-top: 70px;
+    font-family: var(--font-quick);
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    color:#224289
+}
+.pink-section{
+    padding:150px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap:80px
+}
+.pink-section__4fr-box{
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.pink-section__box h3{
+    font-family: "Becky Extra";
+    font-size: 38px;
+    color:#fff;
+    margin: 0;
+}
+.pink-section__box p {
+    margin-top:25px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: var(--font-quick);
+    color:#fff;
+    font-weight: var(--font-weight-medium);
+}
+.pink-section__box__img-wrap{
+     /* padding-left: 30px; */
+    /* padding-right: 30px; */
+}
+.pink-section__4fr-box .pink-section__box__img-wrap{
+   
+    /* flex-basis: 25%; */
+    box-sizing: border-box;
+}
+.pink-section__box__img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+.pink-section__4fr-box .pink-section__box__discription-wrap{
+    padding-left: 63px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    /* flex-basis: 75%; */
+}
+.pink-section__3fr-box{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.pink-section__box__discription-wrap{
+    display: grid;
+    align-content: center;
+}
+.pink-section__3fr-box .pink-section__box__img-wrap{
+    /* flex-basis: 33.4%; */
+    width: 386px;
+    box-sizing: border-box;
+}
+.pink-section__3fr-box .pink-section__box__discription-wrap{
+    /* flex-basis: 66.6%; */
+    padding-left: 65px;
+}
+
+
+.purple-section__wrapper{
+    
+    background-color:#8d80c8
+}
+.purple-section{
+    min-height: calc(90vh);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height:100%;
+}
+.purple-section__left__img-wrapper{
+    padding-top: 100px;
+    padding-right: 53px;
+    box-sizing: border-box;
+}
+.purple-section__left__img-wrapper img{
+    width: 100%;
+}
+.purple-section__left__img-wrapper{
+    height:100%;
+    display:flex;
+    align-items: flex-end;
+}
+.purple-section_right{
+    display:flex;
+    align-items: center;
+}
+.purple-section_right h2{
+    font-size:46px;
+    color:#fff
+}
+.purple-section_right p {
+    font-family: var(--font-quick);
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    color:#fff;
+}
+.purple-section_right__content{
+    padding-left: 100px;
+    padding-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------
+------------FAQ PAGE---------
+--------------------------- */
+.faq-product__title{
+    font-family: "Becky Extra";
+    color:#13c0d7;
+    font-size: 51px;
+    text-align: center;
+}
+
+.faq-content__item{
+}
+.faq{
+    margin-bottom: 30px;
+}
+.faq__title-h3{
+    margin-top: 70px;margin-bottom: 30px;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-bold);
+    font-size: 37px;
+    color: var(--color-purple);
+    text-align: center;
+}
+.faq__top h2{
+    /* margin: 0; */
+    margin: 70px 0;
+    color: var(--color-purple);
+    font-size: 51px;
+    text-align: center;
+}
+.faq__top__list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 45px;
+    row-gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.faq__top__list li {
+    list-style: none;
+}
+.faq__top__list li a{
+    text-decoration: none;
+}
+.faq__top__list li .button{
+    text-transform: uppercase;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-bold);
+    font-size: 30px;
+}
+.faq-content__item-discrioption-wrapper{
+    border: 2px solid var(--color-purple);
+    margin-top: 20px;
+}
+.faq-content__item-discrioption-wrapper:first-child{
+    margin-top:0px
+}
+.faq-content__item-discrioption{
+    /* padding:35px 40px */
+}
+.faq-content__item-discrioption__top{
+    padding:35px 40px ;cursor: pointer;
+    display:flex; justify-content:space-between;
+    align-items:center;column-gap: 35px;
+}
+.faq-content__item-discrioption__top span{
+    width: 20px;height:20px;
+    
+}
+.faq-content__item-discrioption__top span svg{
+    transition: all 200ms linear;
+}
+.faq-content__item-discrioption__top h4{
+    margin:0;
+}
+.faq-content__item-discrioption__bottom{
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    padding-left:35px; padding-right:35px;
+    transition: all 0.2s linear;
+}
+.faq-content__item-discrioption.active .faq-content__item-discrioption__bottom{
+    padding-bottom: 30px;
+}
+.faq-content__item-discrioption__top h4{
+    font-family: var(--font-motserrat);
+    font-weight: var(--font-weight-regular);
+    font-size: 26px;
+    color: var(--color-purple)
+}
+.faq-content__item-discrioption.active .faq-content__item-discrioption__top span svg{
+    transform: rotate(45deg)
+}
+.faq-content__item-discrioption__hidden p {
+    font-size: 21px;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-purple);
+}
+
+
+/* --------------------
+------about us---------
+-------------------- */
+
+.banner-about{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-about .banner-content{
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
+    max-width: 540px;
+    margin-right: 130px;
+}
+.banner-row{
+    margin-top:55px
+}
+.banner-row p {
+    margin: 0;padding: 0;
+    font-family: "Becky Extra";
+    font-size:30px;color: #fff;
+}
+.banner-about .banner-content h1{
+    margin: 0; padding: 0;font-size:98px;color:#fff;
+}
+.running-row{
+    height:60px;
+    color: #fff;
+    
+}
+.running-row svg{
+    fill: #fff;
+}
+
+.foto-with-discription__wrapper{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:80vh;
+    display:flex;
+    /* align-items: center; */
+    justify-content:flex-end;
+    box-sizing: border-box;
+}
+.foto-with-discription {
+    max-width:100%;
+    box-sizing: border-box;
+}
+.foto-with-discription__wrapper h2, .foto-with-discription__wrapper p {
+    margin:0; color:#fff
+}
+.foto-with-discription__wrapper .foto-with-discription__content h2{
+    font-family: "Becky Extra";
+    font-size:46px;
+    /* font-size: 2.46vw; */
+}
+.foto-with-discription__wrapper .foto-with-discription__content p{
+    font-family: var(--font-quick);
+    font-size: 22px;
+    /* font-size: 1.19vw; */
+    font-weight: var(--font-weight-bold);
+    padding-top: 30px;
+}
+.foto-with-discription__content{
+    width: 770px;
+    max-width:100%;
+    /* width: 40.1vw; */
+}
+.foto-with-discription__wrapper .foto-with-discription__content p:first-child{
+    padding-top: 46px;
+}
+.foto-with-discription__wrapper .foto-with-discription__content{
+    padding-top: 100px;
+    padding-bottom: 140px;
+}
+
+.product-discription__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    /* min-height:100vh; */
+}
+.product-discription__left ,.product-discription__right{
+    height: 100%;
+    display: flex;
+    align-items:center;
+}
+.product-discription__img-wrap{
+    margin: 0 auto;
+    position: relative;
+    width:78%;
+    padding-top:70%;
+}
+.product-discription__img-wrap img{
+    position:absolute;
+    left:0; top: 0;
+    width: 100%; height: 100%;
+    object-fit: contain;
+}
+.product-discription__inner{
+    /* padding-left: 110px; */
+    /* padding-right: 110px; */
+    padding-left: 5.72vw;
+    padding-right:5.72vw;
+    color: #fff;
+    padding-bottom: 80px;
+}
+.product-discription__inner h3{
+    font-size: 46px;
+    /* font-size: 2.46vw; */
+    text-transform: uppercase;margin: 0;
+}
+.product-discription__inner p{
+    font-family: var(--font-quick);
+    font-size:27px;
+    /* font-size: 1.45vw; */
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+}
+.product-discription__inner article{
+    font-family: var(--font-quick);
+    font-size:25px;
+    /* font-size: 1.345vw; */
+    font-weight: var(--font-weight-medium);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+BEING SOCIAL
+
+*/
+
+.being-social__top h2{
+    font-family: "Becky Extra";
+    font-size: 52px;
+    color: var(--color-light-blue);
+    margin: 0;
+}
+.beingSocial-wrapper {
+    margin-top: 50px;
+}
+.being-social{
+    padding-top: 125px;
+    margin-left: 9.8vw;
+    padding-bottom: 75px;
+}
+.beingSocial-slide{
+    max-width: 100%;
+        width: 26.3%;
+        margin-right: ;
+        text-decoration: none;
+}
+.beingSocial-slide__img-wrap{
+        width: 100%;
+        padding-top: 97%;
+        /* max-height: 425px; */
+        position: relative;
+}
+.beingSocial-slide__img-wrap img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    left:0;
+    top: 0;
+}
+.beingSocial-slide p {
+    margin: 0;
+    margin-top:35px;
+    text-align: center;
+    color: var(--color-light-blue);
+    font-family: var(--font-motserrat);
+    font-size:18px;
+    font-weight:var(--font-weight-regular);
+
+}
+.being-social__top__link{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:var(--color-light-blue);
+    font-family: var(--font-motserrat);
+    font-size:18px;
+    font-weight:var(--font-weight-semi-bold);
+}
+.being-social__top__link svg{
+    fill:var(--color-light-blue);
+    margin-right: 7px;
+}
+
+
+.param-table{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display:grid;
+    align-content: center;
+}
+.param-table table {
+    border-spacing: 12px 0px;
+    border-collapse: collapse;
+}
+.param-table tbody tr:nth-child(1){
+    border-bottom: 2px solid #f3ad7c;
+}
+.table-desktop td,.table-desktop th{
+    
+    /* margin-right: 12px; */
+}
+.table-desktop th, .table-desktop td{
+    text-align:center;
+}
+.table-desktop tr td{
+    font-size: 26px;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-medium);
+    color:#fff;
+}
+.table-desktop tbody tr:nth-child(1) td{
+    font-size: 36px;
+    font-family: "Becky Extra";
+    color:#fff;border-bottom: 1px solid black;
+    
+}
+.table-desktop tr td{
+    padding: 40px 0; 
+}
+.param-table h2{
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.param-table .thead th .header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.param-table h3{
+    text-align: center;
+    font-size: 46px;
+    font-family: "Becky Extra";
+    color:#fff;
+}
+.param-table .thead th{
+    /* display: inline-block; */
+}
+table .thead .header-title{
+    width: 166px;
+    height:68px;
+    /* height:100%; */
+    position: relative;
+    max-width: 166px;
+    z-index: 3;
+    max-height:68px;
+    padding: 10px;
+    box-sizing:border-box;
+    margin:0 6px;
+    color:#fff;
+    font-family: var(--font-motserrat);
+    text-transform: uppercase;
+    /* font-ration:30 */
+    /* font-size: larger; */
+}
+table .thead .header-title::after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index:-1;
+    background-color:#cf7920
+}
+table .thead .header-title::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    z-index:-2;
+    background-color:#f8b37b
+}
+table .thead th:first-child .header-title{
+ margin-left: 0px;
+}
+table .thead th:last-child .header-title{
+ margin-right: 0px;
+}
+.param-table h2{
+    font-size:26px;
+    font-family: "Becky Extra";
+    color:#fff;
+    text-transform: uppercase;
+}
