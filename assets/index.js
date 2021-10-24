@@ -36,3 +36,7 @@ function faqEl(e){
     }
     
 }
+
+function sandwich(e){
+    e.classList.toggle("active")
+}
