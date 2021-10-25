@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/splide.min.css">
     <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Product</title>
     <style>
         .banner-product{
-            background-image: url('./assets/product_1.jpg');
+            /* background-image: url('./assets/product_1.jpg'); */
         }
         .photo-and-description__section{
             background-image: url('./assets/product_2.jpg');
@@ -271,17 +270,46 @@
             width: 100%;
             height:100%
         }
-        .banner-product .splide-wrapper.up .splide__slide{
-            height: 100% !important;
+        
+        .mySwiper2{
+            
+            position: absolute;
+            max-width: 100%; height:100%;
+            left: 0; top: 0;z-index: 1;
         }
-        .banner-product .splide-wrapper.up .splide__slide img{
-            object-fit:cover
+        .mySwiper2 .swiper-slide img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
-        .product-slider .splide-wrapper.up, .splide-wrapper.up .splide, .splide-wrapper.up .splide__track {
-            height:100%
+        .mySwiper{
+        
+            position:absolute;
+            bottom: 40px;
+            left: 40px;
+            width: 100px;z-index: 2;
+            max-height:76.5%; overflow: hidden;
         }
-        .thumbnail-navigation-nav{
-            position: absolute; bottom:50px;left: 50px;
+        .mySwiper .swiper-slide{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;cursor: pointer;
+        }
+        .mySwiper .swiper-slide img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+             z-index: -1;
+        }
+        form.banner-content{
+            position: relative;
+            z-index: 3;
+        }
+        .mySwiper .swiper-slide.swiper-slide-thumb-active{
+            border: 3px solid #fff;
+            box-sizing: border-box;
         }
     </style>
 
@@ -347,7 +375,7 @@
         </header>
         <main>
             <div class="banner-wrapper banner-product mainPadding" style=" position:relative; ">
-                <div  class="product-slider">
+                <!-- <div  class="product-slider">
                                 
                     <div  class="splide-wrapper up site">
                         <div  class="splide ">
@@ -393,7 +421,39 @@
                             </div>
                         </div>
                     </div>
+                </div> -->
+                <div class="slider">
+                    <div  class="swiper mySwiper2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                        <div class="swiper-wrapper" id="swiper-wrapper-9d7c8e472962a088" aria-live="polite" >
+                            <div class="swiper-slide"  >
+                                <img src="./assets/product_1.jpg">
+                            </div>
+                            <div class="swiper-slide"  >
+                                <img src="./assets/bannerIndex.jpg">
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-button-next swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-9d7c8e472962a088" aria-disabled="true"></div> -->
+                        <!-- <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-9d7c8e472962a088" aria-disabled="false"></div> -->
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                    <div thumbsslider=""  class="swiper mySwiper   ">
+                        <div class="swiper-wrapper"  >
+                          <div class="swiper-slide"  >
+                            <img src="./assets/product_1.jpg">
+                          </div>
+                          <div class="swiper-slide"  >
+                            <img src="./assets/bannerIndex.jpg">
+                          </div>
+
+
+                          
+                        </div>
+                      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
                 </div>
+                
+                
+                
                 <form class="banner-content">
                     <h1 class="banner-h1">
                         Blueberry Nostalgia
@@ -475,8 +535,8 @@
                             }
                             .count-wrapper .count button{
                                 font-family: 'Oswald'; font-size: 46px; 
-                                padding-left: 10%; 
-                                padding-right: 10%;cursor: pointer;
+                                padding-left: 15%; 
+                                padding-right: 15%;cursor: pointer;
                                 background:none; outline: none; border:none; color:#fff
                             }
                             .count-wrapper .count input[type="number"]{
@@ -957,7 +1017,6 @@
 
 
     <script src="./assets/index.js">    </script>
-    <script src="./assets/splide.min.js"></script>
     <script src="./assets/swiper-bundle.min.js"></script>
     <script>
         const beingSocial = new Swiper('.beingSocial-wrapper', {
@@ -971,39 +1030,25 @@
                 prevEl: '.button-slider-left',
             },
         });
-        let main = new Splide( '.splide', {
-            type       : 'fade',
 
-            heightRatio: 0.85,
-            cover      : true,arrows: false,
-            
-        } );
-        let thumbnails = new Splide( '.thumbnails-pagination', {
-            direction: 'vertical',
-            rewind          : true,
-            fixedWidth      : 60,
-            fixedHeight     : 60,
-            arrows: false,
-            isNavigation    : true,
-            gap             : 10,
-            // focus           : 'center',
-            pagination      : false,
-            cover           : true,
-            dragMinThreshold: {
-                mouse: 4,
-                touch: 10,
+        const productBannerTumb = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            watchSlidesProgress: true,
+            direction:"vertical",
+            spaceBetween: 30
+        });
+        const productBanner = new Swiper(".mySwiper2", {
+            spaceBetween: 0,
+            navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
             },
-            orient:60,
-            breakpoints : {
-                640: {
-                fixedWidth  : 66,
-                fixedHeight : 38,
-                },
+            thumbs: {
+            swiper: productBannerTumb,
             },
-        } );
-        main.sync(thumbnails);
-        main.mount();
-        thumbnails.mount();
+        });
+    
+
     </script>
     
     
