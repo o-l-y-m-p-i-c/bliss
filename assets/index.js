@@ -16,7 +16,7 @@ function getScrollY(){
     scrollingWatch.y = document.scrollingElement.scrollTop
 }
 function watchHeader(){
-    if (scrollingWatch.y > 10) {
+    if (scrollingWatch.y > 100) {
         headerWrapper.classList.add('scrolled')
     }else{
         headerWrapper.classList.remove('scrolled')

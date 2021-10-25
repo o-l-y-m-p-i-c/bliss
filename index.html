@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Bliss Bowl</title>
@@ -11,9 +12,7 @@
         .banner-index{
             background-image: url('./assets/bannerIndex.jpg');
         }
-        .banner-index .banner-h1{
-            color: #fff;
-        }
+        
     </style>
 </head>
 <body>
@@ -41,22 +40,22 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./product.html">
+                            <a href="./product_blueberry.html">
                                 Comprar
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./mindfulness.html">
                                 Subscripciones
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <div class="logo-wrap --textAlignCenter">
+                <a href="./index.html" class="logo-wrap --textAlignCenter">
                     <svg >
                         <use xlink:href="#logo"></use>
                     </svg>
-                </div>
+                </a>
                 <ul class="header-right --upperCase">
                     <li class="header-right__item account">
                         <a href="#">
@@ -85,12 +84,18 @@
                     <div class="banner-content__img-wrapper">
                         <img src="./assets/bannerIndexContent.jpg" alt="">
                     </div>
-                    <!-- <div class=""> -->
-                         <a class="button btn-red margin60px" href="">
-                             
-                             Shop now
-                         </a>
-                    <!-- </div> -->
+                    <a class="button btn-red margin60px" href="">
+                        
+                        Shop now
+                    </a>
+                    <div class="mobile-banner-bg__wrapper">
+                        <div class="mobile-banner-bg">
+                            <img src="./assets/bannerIndex-mobile.jpg" alt="">
+                        </div>
+                        <div class="mobile-banner-content__img-wrapper">
+                            <img src="./assets/bannerIndexContent.jpg" alt="">
+                        </div>
+                    </div>
                    
                 </div>
                 
@@ -101,12 +106,12 @@
             </div>
             <section class="cucharada-recuerdos__section-wrapper --bg-color-purple" style="background-image: url('./assets/indexPage_1.png');">
                 <div class="cucharada-recuerdos mainPadding">
-                    <div class="cucharada-recuerdos__title-img"style="  ">
+                    <div class="cucharada-recuerdos__title-img" data-aos="fade-left">
                         <img src="./assets/indexPage_1.jpg" style="max-width: 40vw;" alt="">
                     </div>
                     <div class="cucharada-recuerdos__description-wrapper" style="">
                         <div class="cucharada-recuerdos__description-item" style=" ">
-                            <div class="cucharada-recuerdos__description-item__img">
+                            <div class="cucharada-recuerdos__description-item__img" data-aos="zoom-in-down">
                                 <img src="./assets/indexPage_2.png"  alt="">
                             </div>
                             
@@ -532,6 +537,7 @@
     </div>
     <script src="./assets/index.js">    </script>
     <script src="./assets/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const productSlider = new Swiper('.product-slider', {
             direction: 'horizontal',
@@ -560,6 +566,7 @@
             speed: 900,
             spaceBetween:60,
         });
+        AOS.init();
     </script>
 </body>
 </html>
