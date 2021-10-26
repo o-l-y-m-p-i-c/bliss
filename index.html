@@ -12,6 +12,7 @@
         .banner-index{
             background-image: url('./assets/bannerIndex.jpg');
         }
+             
         
     </style>
 </head>
@@ -251,6 +252,7 @@
                     display: flex; justify-content: center; column-gap:75px; flex-wrap: wrap;
                 }
                 .why-bliss-healthy__properties__item{
+                    flex-basis: 120px;
                     text-align: center;
                 }
                 .why-bliss-healthy__properties-img{
@@ -261,6 +263,43 @@
                 }
                 .why-bliss-healthy__properties__item p {
                     font-family: var(--font-motserrat); font-weight: var(--font-weight-medium); font-size: 22px; color:#fff; margin-top: 20px; margin-bottom: 0;
+                }
+                .review-slider-buttons-wrapper{
+                    margin-left: auto; margin-right:auto; max-width: 770px; width: 100%;margin-top: 55px; box-sizing: border-box;
+                }
+                .review__item{
+                    margin-left: auto; margin-right:auto; max-width: 770px; width: 100%; box-sizing: border-box; padding-right: 5.2%;
+                }
+                .star-wrapper{
+                    display: flex; column-gap: 2px; margin-top: 30px;
+                }
+                .mindful-eating{
+                    display: flex; align-items: center; padding-top: 100px; padding-bottom: 100px
+                }
+                .mindful-eating__right{
+                    flex-basis: 50%; padding-left: 10.7%; padding-right:  10.7%; box-sizing: border-box;
+                }
+                @media screen and (max-width: 1024px){
+                    .review-slider-buttons-wrapper{
+                        display: table;
+                        max-width:unset;
+                        width: unset;
+                    }
+                    .review__item{
+                        text-align: center;
+                        padding-right: 20px;
+                        padding-left: 20px;
+                    }
+                    .star-wrapper{
+                        justify-content:center;
+                    }
+                    .mindful-eating{
+                        flex-direction: column;
+                        row-gap:50px
+                    }
+                    .mindful-eating__right{
+                        padding:0px
+                    }
                 }
             </style>
             <section class="why-bliss-healthy__wrapper --bg-color-yellow">
@@ -331,11 +370,11 @@
                 </div>
             </section>
             <section class="--bg-color-yellow">
-                <div class=" mainPadding" style="display: flex; align-items: center; padding-top: 100px; padding-bottom: 100px">
-                    <div class="" style="flex-basis: 50%;">
+                <div class="mindful-eating  mainPadding" style="">
+                    <div class="mindful-eating__left" style="flex-basis: 50%;">
                         <img src="./assets/indexPage_2.jpg" style="width: 100% ;max-width: 100%;" alt="">
                     </div>
-                    <div class="" style="flex-basis: 50%; padding-left: 10.7%; padding-right:  10.7%; box-sizing: border-box;">
+                    <div class="mindful-eating__right" style="">
                         <h2 style="text-transform: uppercase;color:#fff; font-family:'Becky Extra'; font-size: 45px; margin: 0px;">
                             mindful<br>eating
                         </h2>
@@ -357,11 +396,11 @@
                         <div class="swiper-wrapper">
                           <!-- Slides -->
                             <div class="swiper-slide reviews-slide " style="">
-                                <div class="review__item" style="margin-left: auto; margin-right:auto; max-width: 770px; width: 100%; box-sizing: border-box; padding-right: 5.2%;">
+                                <div class="review__item" style="">
                                     <article style="font-family: 'Becky Extra'; font-size: 45px; color: var(--color-purple)">
                                         “Is it a sign of successful adulthoodness that I am so totally excited about my new cereals from Bliss Bowl? If so, I am killing it as a grown up.”
                                     </article>
-                                    <div class="star-wrapper" style="display: flex; column-gap: 2px; margin-top: 30px;">
+                                    <div class="star-wrapper" style="">
                                         <div class="star-item">
                                             <svg  width="24" height="24" style="fill: var(--color-light-blue)">
                                                 <use xlink:href="#star"></use>
@@ -388,7 +427,7 @@
                         </div>
                     </div>
 
-                    <div class="mainPadding" style="margin-left: auto; margin-right:auto; max-width: 770px; width: 100%;margin-top: 55px; box-sizing: border-box;">
+                    <div class="review-slider-buttons-wrapper mainPadding" style="">
                         <div class="button-slider-left button-slider" style=" display:inline-block; cursor: pointer">
                             <svg class="arrow" width="62.625px" height="61.75px">
                                 <use xlink:href="#arrowBtn"></use>

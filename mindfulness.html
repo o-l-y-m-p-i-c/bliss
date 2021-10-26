@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Mindfulness</title>
     <style>
+        .banner-wrapper.banner-mindfulness{
+            min-height: 100vh;
+            display: flex;
+        }
         .banner-mindfulness{
             background-image: url('./assets/mindfulnessBanner.jpg')
         }
@@ -35,7 +39,25 @@
                 grid-column-start: 1;
                 grid-template-columns: auto;
             }
-            
+            .purple-section{
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+                /* grid-template-columns: 1fr; */
+                /* grid-auto-flow: */
+            }
+            .purple-section_right__content{
+                text-align: center;
+                padding-left: 0;padding-right: 0;
+                padding-top: 80px;
+                padding-bottom: 55px;
+            }
+            .purple-section__left__img-wrapper{
+                padding:0px;
+                padding-bottom: 10px;
+            }
+            .purple-section__left,.purple-section_right{
+                flex-basis: 100%;
+            }
         }
         @media screen and (max-width: 760px) {
             .pink-section__box__img-wrap{

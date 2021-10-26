@@ -604,6 +604,7 @@ footer{
     box-sizing: border-box;
     width: 100%;
     padding-left: 20px;padding-right: 20px;
+    padding-top: 30vh; padding-bottom: 30vh;
 }
 .banner-mindfulness .banner-content p{
     margin-top: 70px;
@@ -690,10 +691,13 @@ footer{
     background-color:#8d80c8
 }
 .purple-section{
-    min-height: calc(90vh);
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    min-height: 790px;
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
     height:100%;
+}
+.purple-section__left{
+    flex-basis: 50%;
 }
 .purple-section__left__img-wrapper{
     padding-top: 100px;
@@ -709,6 +713,7 @@ footer{
     align-items: flex-end;
 }
 .purple-section_right{
+    flex-basis:50%;
     display:flex;
     align-items: center;
 }
@@ -724,10 +729,13 @@ footer{
     color:#fff;
 }
 .purple-section_right__content{
+    padding-top: 20vh;padding-bottom:20vh;
     padding-left: 100px;
     padding-right: 30px;
 }
-
+.purple-section_right__content h2{
+    margin-top: 0;
+}
 
 
 
@@ -1419,14 +1427,8 @@ BEING SOCIAL
     
 }
 @media screen and (max-width:1024px) {
-    .photo-and-description__section{
-        background-color: #617fc1;
-        background-image: none;
-    }
-    .photo-and-description__wrapper{
-        justify-content:unset;
-        width: unset;
-    }
+    
+    
     .photo-and-description{
         padding-top: 60px;padding-bottom: 50px;
         max-width: unset;
