@@ -11,6 +11,37 @@
         .banner-mindfulness{
             background-image: url('./assets/mindfulnessBanner.jpg')
         }
+        @media screen and (max-width: 1024px){
+            .pink-section{
+                grid-template-columns: 1fr;
+                row-gap: 70px;
+                padding-top: 110px;
+                padding-bottom: 60px;
+            }
+            .pink-section__box{
+                flex-direction: column;
+                text-align: center;
+            }
+            .pink-section__3fr-box .pink-section__box__img-wrap, .pink-section__4fr-box .pink-section__box__img-wrap{
+                margin-left: auto; margin-right:auto
+            }
+            .pink-section__3fr-box .pink-section__box__discription-wrap,.pink-section__4fr-box .pink-section__box__discription-wrap{
+                padding-left: 0;
+            }
+            .pink-section__box__img-wrap{
+                padding-top: 40px;
+            }
+            .pink-section__3fr-box .pink-section__box__discription-wrap{
+                grid-column-start: 1;
+                grid-template-columns: auto;
+            }
+            
+        }
+        @media screen and (max-width: 760px) {
+            .pink-section__box__img-wrap{
+                width: 210px;
+            }
+        }
     </style>
 
 </head>
@@ -87,7 +118,10 @@
                 <div class="pink-section ">
                     <div class="pink-section__4fr-box pink-section__box">
                         <div class="pink-section__box__img-wrap">
-                            <img src="./assets/mindfulness_1.png" alt="">
+                            <div class="pink-section__box__img">
+                                <img src="./assets/mindfulness_1.png" alt="">
+                            </div>
+                            
                         </div>
                         <div class="pink-section__box__discription-wrap">
                             <h3>Meditation</h3>
@@ -100,7 +134,10 @@
                     </div>
                     <div class="pink-section__3fr-box pink-section__box">
                         <div class="pink-section__box__img-wrap">
-                            <img src="./assets/mindfulness_2.png" alt="">
+                            <div class="pink-section__box__img">
+                                <img src="./assets/mindfulness_2.png" alt="">
+                            </div>
+                            
                         </div>
                         <div class="pink-section__box__discription-wrap">
                             <h3>Exercise
@@ -111,26 +148,33 @@
                     </div>
                     <div class="pink-section__4fr-box pink-section__box">
                         <div class="pink-section__box__img-wrap">
-                            <img src="./assets/mindfulness_1.png" alt="">
+                            <div class="pink-section__box__img">
+                                <img src="./assets/mindfulness_3.png" alt="">
+                            </div>
+                            
                         </div>
                         <div class="pink-section__box__discription-wrap">
-                            <h3>Meditation</h3>
-                            <p>Meditation is one of the oldest methods of relaxation, but it not only helps for that, it has many other benefits such as increasing your concentration, creativity and mental alertness, reducing stress and anxiety, improving memory, among many other benefits.
+                            <h3>Affirmations</h3>
+                            <p>
+                                Putting affirmations in your daily routine will give you a feeling of greater control in your life and in the long term it will generate positive changes in your life! Some of the many benefits of affirmations are: With daily repetition, we activate the will, erase negative thoughts learned in our childhood or acquired during your life and promote the secretion of endorphins! Simply put, positive affirmations create the neural foundation for wellness. ( All of this is scientifically proven !)                           
                             </p>
-                            <p>It doesn't take much! Just get into a comfortable posture, close your eyes, and inhale for 4 seconds and exhale for 4 seconds. Make sure to focus on your breath, if you find yourself thinking about different things, just go back to your breath. 
-                            </p>
-                            <p>We also recommend downloading an app like Headspace or Calm , they have super simple programs to learn to meditate.</p>
+                            
                         </div>
                     </div>
                     <div class="pink-section__3fr-box pink-section__box">
                         <div class="pink-section__box__img-wrap">
-                            <img src="./assets/mindfulness_2.png" alt="">
+                            <div class="pink-section__box__img">
+                                <img src="./assets/mindfulness_4.png" alt="">
+                            </div>
+                            
                         </div>
                         <div class="pink-section__box__discription-wrap">
-                            <h3>Exercise
+                            <h3>
+                                Healthy Breakfast
                             </h3>
                             <p>
-                                Exercising is beneficial not only for your physical health, but also for your mental health. After meditating, get on the treadmill, do push-ups, go for a walk, do whatever but move around for a bit! Besides that it will help you stay fit, it will improve your mental acuity and you will charge yourself with energy for the whole day!                             </p>
+                                They say that breakfast is the most important meal of the day, and we understand that sometimes we are in a rush, or your child is late for school, that's why we created Bliss Bowl! We do not want you to start your day eating a bowl of sugar and wheat flour (probably any cereal you have in the pantry), better take a Bliss Bowl, rich in protein and 0% sugar, it guarantees that you start your day with all the energy you need without the sugar crash that gives you after eating a conventional cereal (Approx. 12g of sugar per bowl) 
+                            </p>
                         </div>
                     </div>
                 </div>
