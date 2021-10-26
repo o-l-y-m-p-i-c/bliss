@@ -12,7 +12,13 @@
         .banner-index{
             background-image: url('./assets/bannerIndex.jpg');
         }
-             
+        @media screen and (max-width:1024px) {
+            .banner-index{
+                background-image: unset;
+                background-color: #95c0b7;
+            } 
+        }
+        
         
     </style>
 </head>
@@ -107,7 +113,7 @@
             </div>
             <section class="cucharada-recuerdos__section-wrapper --bg-color-purple" style="background-image: url('./assets/indexPage_1.png');">
                 <div class="cucharada-recuerdos mainPadding">
-                    <div class="cucharada-recuerdos__title-img" data-aos="fade-left">
+                    <div class="cucharada-recuerdos__title-img" data-aos="fade-right">
                         <img src="./assets/indexPage_1.jpg" style="max-width: 40vw;" alt="">
                     </div>
                     <div class="cucharada-recuerdos__description-wrapper" style="">

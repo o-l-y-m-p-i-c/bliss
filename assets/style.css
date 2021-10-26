@@ -1579,10 +1579,7 @@ form.banner-content{
     .banner-index .banner-content__img-wrapper{
         display: none;
     }
-    .banner-index{
-        background-image: unset;
-        background-color: #95c0b7;
-    }
+    
     .mySwiper{
         bottom:20px;
         width: calc(100% - 80px);
