@@ -15,6 +15,9 @@
         .foto-with-discription__wrapper{
             background-image:url('./assets/aboutPage_2.jpg')
         }
+        .param-table.blueberry{
+            background-image: url('./assets/background_1.jpg')
+        }
         @media screen and (max-width: 1024px){
             .banner-about {
                 background-image:none;
@@ -24,92 +27,13 @@
                 background-image:unset;
                 background-color: #d4aa84;
             }
-        }
-        
-        .table-desktop{
-            position: relative;
-        }
-        .row .zero-column{
-            position: absolute;
-            left: -166px;
-            width: 166px;
-        }
-        .foto-with-discription__mobile-img{
-            display:none;
-            position: relative;
-            padding-top:90%;
-        }
-        .foto-with-discription__mobile-img-item{
-            position: absolute;
-            width: 100%;height: 100%;
-            object-fit: cover;
-           
-            left:0;
-            top:0;
-            object-position: left;
-
-        }
-        .param-table.blueberry{
-            background-image: url('./assets/background_1.jpg')
-        }
-        @media screen and (max-width: 1024px){
             .param-table.blueberry{
                 background-image:unset;
                 background-color: #85329a
             }
-            .foto-with-discription__mobile-img{
-                display:block
-            }
-            .banner-about .banner-content{
-                margin: 0;
-                text-align:center;
-                max-width:100%;
-            }
-            .banner-about .banner-content{
-                padding-bottom: 0;
-            }
-            .banner-about .mobile-banner-bg__wrapper{
-                margin-top: 40px;
-            }
-            .foto-with-discription__content{
-                text-align: center
-            }
-            .foto-with-discription__wrapper .foto-with-discription__content{
-                padding-top: 60px;
-                padding-bottom: 50px;
-            }
-            .foto-with-discription__wrapper .foto-with-discription__content h2{
-                font-size: 32px;
-            }
-            .foto-with-discription__wrapper .foto-with-discription__content p{
-                font-size: 20px;
-            }
-            .banner-about .banner-content h1{
-                font-size:68px
-            }
-            .banner-row p{
-                font-size:20px
-            }
-            .product-discription__wrapper{
-                grid-template-columns: 1fr;
-            }
-            .product-discription__inner h3{
-                font-size:36px
-            }
-            .being-social__top h2{
-                font-size:32px
-            }
-            .being-social__top__link{
-                justify-content: center;
-            }
-            .being-social__top{
-                text-align: center;
-                padding-right: 9.8vw;
-            }
-            .being-social{
-                padding-top: 85px;
-            }
         }
+        
+        
     </style>
 </head>
 <body>
@@ -174,15 +98,15 @@
         <main>
             <div class="banner-wrapper banner-about">
                 <div class="banner-content">
-                    <h1 class="--title">bliss</h1>
-                    <div class="banner-row">
+                    <h1 class="--title" data-aos="fade-right">bliss</h1>
+                    <div class="banner-row" data-aos="fade-right" data-aos-delay="200" >
                         
                             <p>n.</p>
                             <p>1. Perfect happiness; ecstasy.</p>
                         
                         
                     </div>
-                    <div class="banner-row">
+                    <div class="banner-row" data-aos="fade-right" data-aos-delay="400">
                         <p >v.</p>
                         <p>1. To reach a state of complete happiness. Typically so as to be oblivious to anything else.</p>
                     </div>
@@ -282,18 +206,19 @@
             <section class="foto-with-discription__wrapper" >
                 <div class="foto-with-discription mainPadding">
                     <div class="foto-with-discription__content">
-                        <h2 class=" --title">
+                        <h2 class=" --title" data-aos="fade-left">
                             Nice to meet you!
                         </h2>
-                        <div class="">
-                            <p>I'm Nico, founder of Bliss Bowl.                    </p>
-                            <p>
+                        <div class=""  >
+                            <p data-aos="fade-left" data-aos-offset="200">I'm Nico, founder of Bliss Bowl.                    
+                            </p>
+                            <p data-aos="fade-left" data-aos-offset="200">
                                 Like the vast majority of people, I grew up eating cereal in the mornings, I still remember those Saturday mornings when I woke up at 8am, served me a delicious plate of my favorite cereal and turned on channel 5 to watch my favorite cartoon. After the second course, my mom took the cereal from me because she knew I was eating pure sugar, artificial flavorings, and empty carbohydrates. 
                             </p>
-                            <p>
+                            <p data-aos="fade-left" data-aos-offset="200">
                                 While we were growing up, my mother, to try to reduce our consumption of sugar, bought us cereals, which although they were a little more nutritious, tasted like cardboard.
                             </p>
-                            <p>
+                            <p data-aos="fade-left" data-aos-offset="200">
                                 Many years later, seeing how the food industry was transforming for the better, I decided to find a solution to that problem that my mother, like many others, saw that existed in the food industry. To be more specific, I have come to look for a healthy alternative to that succulent dish that every child, youth and adult likes, cereal. And the best part is that we did it without compromising those delicious flavors that remind us so much of our childhood. 
                             </p>
                         </div>
@@ -308,32 +233,32 @@
             <section class="product-discription__wrapper">
                 <div class="product-discription__left --bg-color-blue">
                     <div class="product-discription__inner">
-                        <div class="product-discription__img-wrap">
+                        <div class="product-discription__img-wrap" data-aos="fade-up" >
                             <img src="./assets/aboutPage_1.png" alt="">
                         </div>
-                        <h3 class="--title">
+                        <h3 class="--title" data-aos="fade-up" data-aos-offset="200">
                             The Villain
                         </h3>
-                        <p>
+                        <p data-aos="fade-up" data-aos-offset="200">
                             Excess sugar, empty carbohydrates, <br>little transparency
                         </p>
-                        <article>
+                        <article data-aos="fade-up" data-aos-offset="200">
                             The conventional cereals that everyone has in their pantries are basically boxes of sugar and refined carbohydrates (the bad carbs), so it was not strange to us that you could eat 3 dishes and still not fill up! And not to mention the sugar crash that gives you after eating these cereals. Even cereals that pass themselves off as "healthy" carry excessive amounts of sugar!
                         </article>
                     </div>
                 </div>
                 <div class="product-discription__right "style="background-color:#672773">
                     <div class="product-discription__inner">
-                        <div class="product-discription__img-wrap">
+                        <div class="product-discription__img-wrap" data-aos="fade-up">
                             <img src="./assets/aboutPage_2.png" alt="">
                         </div>
-                        <h3 class="--title">
+                        <h3 class="--title" data-aos="fade-up" data-aos-offset="200">
                             The hero! 
                         </h3>
-                        <p>
+                        <p data-aos="fade-up" data-aos-offset="200">
                             Where healthy meets delicious
                         </p>
-                        <article>
+                        <article data-aos="fade-up" data-aos-offset="200">
                             Do you remember as a child when you did not feel guilty eating dishes and cereal dishes that were bad for your health? Now you can eat those cereals that you liked so much without any regrets!<br>
                             It took us more than a year to create this delicious cereal with ingredients for adults and we will continue to improve the formula to make the cereal more complete every time! But for now see how we stack up against the competition:
                         </article>
@@ -342,10 +267,10 @@
             </section>
             <section class="param-table blueberry" style="">
                 <div class="param-table__content-wrapper">
-                    <h2>
+                    <h2 data-aos="flip-left">
                         How do we stack up to the “classics”?
                     </h2>
-                    <table id="table-desktop"  class="table-desktop">
+                    <table id="table-desktop" data-aos="fade-up" class="table-desktop" data-aos-offset="200">
                             <thead class="thead">
                                 <tr class="first-row row">
                                     <th class="zero-column">
@@ -453,7 +378,7 @@
                        
                     </table>
   
-                    <table class="table-mobile" >
+                    <table  class="table-mobile" data-aos="fade-up" class="table-desktop" data-aos-offset="200">
                         <thead>
                             <tr class="first-row row">
                                 <th class="first-column column"></th>
@@ -557,8 +482,8 @@
             <section class="being-social__wrapper ">
                 <div class="being-social">
                     <div class="being-social__top">
-                        <h2>Being social - being supportive</h2>
-                        <a href="#" class="being-social__top__link">
+                        <h2 data-aos="fade-right">Being social - being supportive</h2>
+                        <a href="#" class="being-social__top__link" data-aos="fade-right" data-aos-delay="300">
                             <svg height="20" width="20">
                                 <use xlink:href="#instagram"></use>
                             </svg>

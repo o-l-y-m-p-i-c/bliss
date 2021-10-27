@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Faq</title>
 </head>
-<body class="paddingTop">
+<body class="">
     <div class="content">
         <header class="header-wrapper">
             <div class="cc-announcement   --bg-color-purple">
@@ -27,27 +28,27 @@
                 <nav>
                     <ul class="  --upperCase">
                         <li>
-                            <a href="#">
+                            <a href="./about.html">
                                 Conócenos
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./product_blueberry.html">
                                 Comprar
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./mindfulness.html">
                                 Subscripciones
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <div class="logo-wrap --textAlignCenter">
+                <a href="./index.html" class="logo-wrap --textAlignCenter">
                     <svg >
                         <use xlink:href="#logo"></use>
                     </svg>
-                </div>
+                </a>
                 <ul class="header-right --upperCase">
                     <li class="header-right__item account">
                         <a href="#">
@@ -67,17 +68,17 @@
             
         </header>
         <main>
-            <section class="faq-section">
+            <section class="faq-section paddingTop">
                 <div class="faq mainPadding">
                     <div class="faq__top">
-                        <h2 class=" --title">
+                        <h2 class=" --title" data-aos="flip-left">
                             FAQ
                         </h2>
                         <ul class="faq__top__list">
-                            <li><a class="button btn-purple" href="#Producto">Producto</a></li>
-                            <li><a class="button btn-purple" href="#Envíos">Envíos</a></li>
-                            <li><a class="button btn-purple" href="#MiOrden">Mi Orden</a></li>
-                            <li><a class="button btn-purple" href="#Suscripción">Suscripción</a></li>
+                            <li><a class="button btn-purple" data-aos="fade-right" data-aos-delay="50" href="#Producto">Producto</a></li>
+                            <li><a class="button btn-purple" data-aos="fade-right" data-aos-delay="100" href="#Envíos">Envíos</a></li>
+                            <li><a class="button btn-purple" data-aos="fade-right" data-aos-delay="150" href="#MiOrden">Mi Orden</a></li>
+                            <li><a class="button btn-purple" data-aos="fade-right" data-aos-delay="200" href="#Suscripción">Suscripción</a></li>
                         </ul>
                     </div>
                     <div class="faq-content__wrapper">
@@ -282,7 +283,11 @@
 
 
     <script src="assets/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 

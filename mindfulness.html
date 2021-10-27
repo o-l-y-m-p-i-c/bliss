@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Mindfulness</title>
@@ -15,55 +16,7 @@
         .banner-mindfulness{
             background-image: url('./assets/mindfulnessBanner.jpg')
         }
-        @media screen and (max-width: 1024px){
-            .pink-section{
-                grid-template-columns: 1fr;
-                row-gap: 70px;
-                padding-top: 110px;
-                padding-bottom: 60px;
-            }
-            .pink-section__box{
-                flex-direction: column;
-                text-align: center;
-            }
-            .pink-section__3fr-box .pink-section__box__img-wrap, .pink-section__4fr-box .pink-section__box__img-wrap{
-                margin-left: auto; margin-right:auto
-            }
-            .pink-section__3fr-box .pink-section__box__discription-wrap,.pink-section__4fr-box .pink-section__box__discription-wrap{
-                padding-left: 0;
-            }
-            .pink-section__box__img-wrap{
-                padding-top: 40px;
-            }
-            .pink-section__3fr-box .pink-section__box__discription-wrap{
-                grid-column-start: 1;
-                grid-template-columns: auto;
-            }
-            .purple-section{
-                flex-wrap: wrap;
-                flex-direction: column-reverse;
-                /* grid-template-columns: 1fr; */
-                /* grid-auto-flow: */
-            }
-            .purple-section_right__content{
-                text-align: center;
-                padding-left: 0;padding-right: 0;
-                padding-top: 80px;
-                padding-bottom: 55px;
-            }
-            .purple-section__left__img-wrapper{
-                padding:0px;
-                padding-bottom: 10px;
-            }
-            .purple-section__left,.purple-section_right{
-                flex-basis: 100%;
-            }
-        }
-        @media screen and (max-width: 760px) {
-            .pink-section__box__img-wrap{
-                width: 210px;
-            }
-        }
+        
     </style>
 
 </head>
@@ -129,8 +82,8 @@
         <main>
             <div class="banner-wrapper banner-mindfulness">
                 <div class="banner-content">
-                    <h1 class="banner-h1 --colorBlue">A little <br> "Mindfulness"</h1>
-                    <p class="--colorBlue"> 
+                    <h1 class="banner-h1 --colorBlue" data-aos="fade-right">A little <br> "Mindfulness"</h1>
+                    <p class="--colorBlue" data-aos="fade-right" data-aos-delay="100"> 
                         Today more than ever, we are being bombarded with negativity, either by the news we read, or by social media, which unconsciously makes us yearn to have someone else's life. That is why it is important to start your day on a positive note! 
                     </p>
                 </div>
@@ -146,12 +99,12 @@
                             
                         </div>
                         <div class="pink-section__box__discription-wrap">
-                            <h3>Meditation</h3>
-                            <p>Meditation is one of the oldest methods of relaxation, but it not only helps for that, it has many other benefits such as increasing your concentration, creativity and mental alertness, reducing stress and anxiety, improving memory, among many other benefits.
+                            <h3 data-aos="fade-right">Meditation</h3>
+                            <p data-aos="fade-right">Meditation is one of the oldest methods of relaxation, but it not only helps for that, it has many other benefits such as increasing your concentration, creativity and mental alertness, reducing stress and anxiety, improving memory, among many other benefits.
                             </p>
-                            <p>It doesn't take much! Just get into a comfortable posture, close your eyes, and inhale for 4 seconds and exhale for 4 seconds. Make sure to focus on your breath, if you find yourself thinking about different things, just go back to your breath. 
+                            <p data-aos="fade-right">It doesn't take much! Just get into a comfortable posture, close your eyes, and inhale for 4 seconds and exhale for 4 seconds. Make sure to focus on your breath, if you find yourself thinking about different things, just go back to your breath. 
                             </p>
-                            <p>We also recommend downloading an app like Headspace or Calm , they have super simple programs to learn to meditate.</p>
+                            <p data-aos="fade-right">We also recommend downloading an app like Headspace or Calm , they have super simple programs to learn to meditate.</p>
                         </div>
                     </div>
                     <div class="pink-section__3fr-box pink-section__box">
@@ -162,9 +115,9 @@
                             
                         </div>
                         <div class="pink-section__box__discription-wrap">
-                            <h3>Exercise
+                            <h3 data-aos="fade-right">Exercise
                             </h3>
-                            <p>
+                            <p data-aos="fade-right">
                                 Exercising is beneficial not only for your physical health, but also for your mental health. After meditating, get on the treadmill, do push-ups, go for a walk, do whatever but move around for a bit! Besides that it will help you stay fit, it will improve your mental acuity and you will charge yourself with energy for the whole day!                             </p>
                         </div>
                     </div>
@@ -176,8 +129,8 @@
                             
                         </div>
                         <div class="pink-section__box__discription-wrap">
-                            <h3>Affirmations</h3>
-                            <p>
+                            <h3 data-aos="fade-right">Affirmations</h3>
+                            <p data-aos="fade-right">
                                 Putting affirmations in your daily routine will give you a feeling of greater control in your life and in the long term it will generate positive changes in your life! Some of the many benefits of affirmations are: With daily repetition, we activate the will, erase negative thoughts learned in our childhood or acquired during your life and promote the secretion of endorphins! Simply put, positive affirmations create the neural foundation for wellness. ( All of this is scientifically proven !)                           
                             </p>
                             
@@ -191,10 +144,10 @@
                             
                         </div>
                         <div class="pink-section__box__discription-wrap">
-                            <h3>
+                            <h3 data-aos="fade-right">
                                 Healthy Breakfast
                             </h3>
-                            <p>
+                            <p data-aos="fade-right">
                                 They say that breakfast is the most important meal of the day, and we understand that sometimes we are in a rush, or your child is late for school, that's why we created Bliss Bowl! We do not want you to start your day eating a bowl of sugar and wheat flour (probably any cereal you have in the pantry), better take a Bliss Bowl, rich in protein and 0% sugar, it guarantees that you start your day with all the energy you need without the sugar crash that gives you after eating a conventional cereal (Approx. 12g of sugar per bowl) 
                             </p>
                         </div>
@@ -210,8 +163,8 @@
                     </div>
                     <div class="purple-section_right">
                         <div class="purple-section_right__content">
-                            <h2 class="--title">At Bliss Bowl</h2>
-                            <p>
+                            <h2 class="--title" data-aos="fade-left">At Bliss Bowl</h2>
+                            <p data-aos="fade-left" data-aos-delay="100">
                                 we want you to not only start your day with a healthy and delicious breakfast, we also want you to start your day on a positive note! Behind each box of Bliss Bowl, come a series of affirmations, repeat them every morning to start your day the right way!
                             </p>
                         </div>
@@ -221,8 +174,8 @@
             <section class="being-social__wrapper ">
                 <div class="being-social">
                     <div class="being-social__top">
-                        <h2>Being social - being supportive</h2>
-                        <a href="#" class="being-social__top__link">
+                        <h2 data-aos="fade-right">Being social - being supportive</h2>
+                        <a href="#" class="being-social__top__link" data-aos="fade-right" data-aos-delay="300">
                             <svg height="20" width="20">
                                 <use xlink:href="#instagram"></use>
                             </svg>
@@ -350,9 +303,9 @@
             </div>
         </footer>
     </div>
-    <script src="./assets/jquery.min.js"></script>
     <script src="assets/index.js"></script>
     <script src="./assets/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const beingSocial = new Swiper('.beingSocial-wrapper', {
             direction: 'horizontal',
@@ -366,7 +319,7 @@
             },
         });
       
-        
+        AOS.init();
     </script>
 </body>
 </html>

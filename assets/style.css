@@ -60,7 +60,7 @@ html{
     height: 100%;
 }
 body{
-    height: 100%;margin: 0;padding:0;background-color: #f5dfce;
+    height: 100%;margin: 0;padding:0;background-color: #95c0b7;
 }
 header{
     position: fixed;
@@ -573,8 +573,12 @@ footer{
     padding-top:90px;
 }
 .banner-content__img-wrapper{
-    padding-left: 33.6vw;
-    padding-right:  33.6vw;
+    width: 32.8vw;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 33.6vw; */
+    /* padding-right:  33.6vw; */
     height:120%;
     /* width: 27.96vw; */
 }
@@ -587,7 +591,8 @@ footer{
         font-size: 47px;
     }
     .banner-content{
-        padding-top:170px
+        padding-top:170px;
+        overflow: hidden;
     }
 }
 /* end index page */
@@ -605,7 +610,7 @@ footer{
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: calc(30vh + 190px) ; padding-bottom: 30vh;
+    padding-top: 30vh ; padding-bottom: 30vh;
 }
 .banner-mindfulness .banner-content p{
     margin-top: 70px;
@@ -748,7 +753,15 @@ footer{
 /* --------------------------
 ------------FAQ PAGE---------
 --------------------------- */
+.faq-section{
+    background-color:#f5dfce
+}
+.faq-product{
+    overflow: hidden;
+}
 .faq-product__title{
+    margin: 0;
+    padding: 80px 0 60px 0;
     font-family: "Becky Extra";
     color:#13c0d7;
     font-size: 51px;
@@ -758,7 +771,7 @@ footer{
 .faq-content__item{
 }
 .faq{
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 .faq__title-h3{
     margin-top: 70px;margin-bottom: 30px;
@@ -769,8 +782,9 @@ footer{
     text-align: center;
 }
 .faq__top h2{
-    /* margin: 0; */
-    margin: 70px 0;
+    margin: 0;
+    padding: 70px 0;
+    /* margin: 70px 0; */
     color: var(--color-purple);
     font-size: 51px;
     text-align: center;
@@ -920,6 +934,7 @@ footer{
     padding-top: 46px;
 }
 .foto-with-discription__wrapper .foto-with-discription__content{
+    overflow: hidden;
     padding-top: 100px;
     padding-bottom: 140px;
 }
@@ -1003,6 +1018,9 @@ BEING SOCIAL
     color: var(--color-light-blue);
     margin: 0;
 }
+.being-social__wrapper {
+    background-color: #f5dfce;
+}
 .beingSocial-wrapper {
     margin-top: 50px;
 }
@@ -1013,7 +1031,7 @@ BEING SOCIAL
 }
 .beingSocial-slide{
     max-width: 100%;
-        width: 26.3%;
+        width: 430px;
         min-width: 300px;
         text-decoration: none;
 }
@@ -1123,6 +1141,7 @@ BEING SOCIAL
     color:#fff;
 }
 .param-table__content-wrapper{
+    overflow: hidden;
     padding-bottom: 115px;
 }
  table .thead .header-title{
@@ -1200,6 +1219,11 @@ BEING SOCIAL
 .table-mobile th.third-column{
     font-size: 22px;font-weight: var(--font-weight-bold);
 }
+.banner-product .banner-content{
+    overflow: hidden;
+    
+}
+
 @media screen and (max-width: 1100px) {
     .param-table .table-desktop{
         display: none;
@@ -1218,7 +1242,8 @@ BEING SOCIAL
     max-width: 100%;
     width: 580px;
     text-align: left;
-    box-sizing: border-box;
+    box-sizing: border-box;padding-left: 20px;
+    padding-right: 20px;
 }
 .banner-product .banner-h1{
     font-size:47px;color:#fff;
@@ -1335,6 +1360,7 @@ BEING SOCIAL
     text-decoration: underline;
 }
 .photo-and-description{
+    overflow: hidden;
     max-width:770px;
     padding-top:160px; padding-bottom:100px
 }
@@ -1347,10 +1373,15 @@ BEING SOCIAL
 .photo-and-description__link{
     display: inline-flex; align-items: center; column-gap: 20px; font-family: var(--font-quick);font-weight: var(--font-weight-medium); color:#13c0d7;margin-top: 70px;
 }
+.faq-product__section{
+    background-color: #f5dfce;
+}
 .faq-product__section a.button.btn-blue {
-    font-size:30px
+    font-size:30px;
+    margin-bottom: 4px;
 }
 .testimonials{
+    overflow: hidden;
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
@@ -1429,7 +1460,9 @@ BEING SOCIAL
 }
 @media screen and (max-width:1024px) {
     
-    
+    .banner-mindfulness .banner-content{
+        padding-top:15vh;padding-bottom: 15vh;
+    }
     .photo-and-description{
         padding-top: 60px;padding-bottom: 50px;
         max-width: unset;
@@ -1648,6 +1681,253 @@ form.banner-content{
     object-fit:contain
 
 }
+.cucharada-recuerdos__title-img img{
+    width:40vw;
+}
+.cucharada-recuerdos__section-wrapper{
+    background-size: contain; background-repeat: no-repeat;
+}
+.cucharada-recuerdos__description-wrapper{
+    row-gap: 40px;
+    margin-top: 100px; justify-content: center ; display:flex; align-items: flex-end; column-gap: 8.5vw; flex-wrap: wrap;
+}
+.cucharada-recuerdos__description-item{
+    position: relative; flex-basis: 22%; ; 
+    min-width: 170px;display:flex
+}
+.cucharada-recuerdos__description-item__img{
+    padding-top: 100%;width: 100%;
+}
+
+.cucharada-recuerdos__description-item img{
+    position: absolute;
+    top:0;left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cucharada-recuerdos__title-img{
+    display:flex;justify-content:center;
+}
+.product-slider{
+    padding: 100px 0;
+}
+.product-slider{
+    position: relative;
+}
+.product-slider .swiper-slide.card{
+    /* width:calc(25% - 30px); */
+    text-align: center;padding-bottom: 5px;
+    width: 320px;
+    max-width: 100%
+}
+.product-slider .swiper-slide.card a.button{
+    white-space: nowrap;
+}
+.product-slider .card__img-wrapper{
+    width: 100%; padding-top: 150%; position: relative;
+}
+.product-slider .card__img-wrapper img {
+    width: 100%; height: 100%; position: absolute; left: 0;top: 0; object-fit: contain;
+}
+.product-slider .swiper-slide.card h4{
+    font-size:31px;
+}
+.why-bliss-healthy__img-wrapper{
+    display: flex; align-items: flex-end;
+}
+.why-bliss-healthy__img-wrapper img{
+    width: 100% ;max-width: 100%;
+}
+.why-bliss-healthy__properties-wrapper{
+    display: flex; justify-content: center; column-gap:75px; flex-wrap: wrap;
+    row-gap:65px
+}
+.why-bliss-healthy__properties__item{
+    flex-basis: 120px;
+    text-align: center;
+}
+.why-bliss-healthy__properties-img{
+    position: relative; width: 100px; height:100px; margin-left: auto; margin-right: auto
+}
+.why-bliss-healthy__properties-img img{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;
+}
+.why-bliss-healthy__properties__item p {
+    font-family: var(--font-motserrat); font-weight: var(--font-weight-medium); font-size: 22px; color:#fff; margin-top: 20px; margin-bottom: 0;
+}
+.review-slider-buttons-wrapper{
+    margin-left: auto; margin-right:auto; max-width: 770px; width: 100%;margin-top: 55px; box-sizing: border-box;
+}
+.review__item{
+    margin-left: auto; margin-right:auto; max-width: 770px; width: 100%; box-sizing: border-box; padding-right: 5.2%;
+}
+.star-wrapper{
+    display: flex; column-gap: 2px; margin-top: 30px;
+}
+.mindful-eating{
+    display: flex; align-items: center; padding-top: 100px; padding-bottom: 100px
+}
+.mindful-eating__right{
+    overflow: hidden;
+    flex-basis: 50%; padding-left: 10.7%; padding-right:  10.7vw; box-sizing: border-box;
+}
+
+.why-bliss-healthy__title-wrapper{
+    text-align: center;
+}
+.why-bliss-healthy__title{
+    text-transform: uppercase; color:#fff; font-family: 'Becky Extra';font-size: 45px;
+}
+.mindful-eating__left{
+    flex-basis: 50%;
+}
+.mindful-eating__left img{
+    width: 100% ;max-width: 100%;
+}
+.mindful-eating__right__title{
+    text-transform: uppercase;color:#fff; font-family:'Becky Extra'; font-size: 45px; margin: 0px;
+}
+.mindful-eating__right__description{
+    font-family:var(--font-motserrat); font-size:20px; font-weight: var(--font-weight-regular); color: #fff; margin-top:40px;
+}
+.mindful-eating__right a.button{
+    margin-top:40px;
+}
+.review__item .star-item svg{
+    fill: var(--color-light-blue)
+}
+.review-author{
+    font-family: var(--font-quick); font-size:25px; font-weight: var(--font-weight-semi-bold);color: var(--color-purple); margin:14px 0
+}
+.reviews-slider-wrapper{
+    background-color: #f5dfce;
+    padding: 150px 0 0 0
+}
+.review-description{
+    font-family: 'Becky Extra'; font-size: 45px; color: var(--color-purple)
+}
+.review-slider-buttons-wrapper .button-slider{
+    display:inline-block; cursor: pointer
+}
+.review-slider-buttons-wrapper .button-slider.button-slider-right{
+    margin-left: 33px; transform:scale(-1,1)
+}
+.product-slider-btn{
+    position: absolute;
+    top: 50%; left:0;z-index: 2;
+}
+.product-slider-btn.swiper-button-disabled{
+    display:none
+}
+.product-slider-btn.product-slider-btn-next{
+    transform:scale(-1,1);
+    right: 0;
+    left: unset;
+}
+.why-bliss-healthy__title-wrapper-mobile{
+    display:none
+}
+@media screen and (max-width: 1024px){
+    
+    .review-slider-buttons-wrapper{
+        display: table;
+        max-width:unset;
+        width: unset;
+    }
+    .review__item{
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .star-wrapper{
+        justify-content:center;
+    }
+    .mindful-eating{
+        flex-direction: column;
+        row-gap:50px
+    }
+    .mindful-eating__right{
+        padding:0px
+    }
+    .why-bliss-healthy__title-wrapper-mobile .why-bliss-healthy__title{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 900px){
+    .why-bliss-healthy__title-wrapper{
+        display: none;
+    }
+    .why-bliss-healthy__title-wrapper-mobile{
+        display:block
+    }
+    .review-description{
+        font-size:25px;
+    }
+    .review-author{
+        font-size: 20px;
+    }
+    .reviews-slider-wrapper{
+        padding-top: 75px;
+    }
+    .review-slider-buttons-wrapper {
+        margin-top: 35px;
+    }
+    .being-social{
+        padding-top: 75px;
+    }
+    .being-social__top{
+        margin-right: 9.8vw;
+    }
+    .being-social__top h2{
+        font-size:32px;
+        text-align:center
+    }
+    .being-social__top__link{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:830px){
+    .cucharada-recuerdos__description-wrapper{
+        margin-top: 50px;
+    }
+    .cucharada-recuerdos__section-wrapper{
+        background-position-x: -11vw;
+        background-size: 112.5vw;
+        background-position-y:20px
+    }
+    .cucharada-recuerdos__title-img img{
+        width:70vw;
+    }
+    .cucharada-recuerdos__title-img {
+        padding-top:60px
+    }
+    .cucharada-recuerdos__description-wrapper{
+        column-gap:10%;
+    }
+    .cucharada-recuerdos__description-item{
+        flex-basis: 45%;
+        min-width: unset;
+    }
+    .cucharada-recuerdos__description-item:nth-child(1){
+        order:0
+    }
+    .cucharada-recuerdos__description-item:nth-child(2){
+        order:2
+    }
+    .cucharada-recuerdos__description-item:nth-child(3){
+        order:1
+    }
+}
+@media screen and (max-width: 480px){
+    .why-bliss-healthy__properties-wrapper{
+        column-gap: unset;
+    }
+    .why-bliss-healthy__properties__item{
+        flex-basis: 50%;
+    }
+}
+
 @media screen and (max-width: 1024px){
     .banner-index{
         background-image: unset;
@@ -1660,5 +1940,124 @@ form.banner-content{
     }
     .mobile-banner-bg__wrapper{
         display: block
+    }
+}
+
+.table-desktop{
+    position: relative;
+}
+.row .zero-column{
+    position: absolute;
+    left: -166px;
+    width: 166px;
+}
+.foto-with-discription__mobile-img{
+    display:none;
+    position: relative;
+    padding-top:90%;
+}
+.foto-with-discription__mobile-img-item{
+    position: absolute;
+    width: 100%;height: 100%;
+    object-fit: cover;
+   
+    left:0;
+    top:0;
+    object-position: left;
+
+}
+
+@media screen and (max-width: 1024px){
+    .param-table.blueberry{
+        background-image:unset;
+        background-color: #85329a
+    }
+    .foto-with-discription__mobile-img{
+        display:block
+    }
+    .banner-about .banner-content{
+        margin: 0;
+        text-align:center;
+        max-width:100%;
+    }
+    .banner-about .banner-content{
+        padding-bottom: 0;
+    }
+    .banner-about .mobile-banner-bg__wrapper{
+        margin-top: 40px;
+    }
+    .foto-with-discription__content{
+        text-align: center
+    }
+    .foto-with-discription__wrapper .foto-with-discription__content{
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .foto-with-discription__wrapper .foto-with-discription__content h2{
+        font-size: 32px;
+    }
+    .foto-with-discription__wrapper .foto-with-discription__content p{
+        font-size: 20px;
+    }
+    .banner-about .banner-content h1{
+        font-size:68px
+    }
+    .banner-row p{
+        font-size:20px
+    }
+    .product-discription__wrapper{
+        grid-template-columns: 1fr;
+    }
+    .product-discription__inner h3{
+        font-size:36px
+    }
+}
+@media screen and (max-width: 1024px){
+    .pink-section{
+        grid-template-columns: 1fr;
+        row-gap: 70px;
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+    .pink-section__box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .pink-section__3fr-box .pink-section__box__img-wrap, .pink-section__4fr-box .pink-section__box__img-wrap{
+        margin-left: auto; margin-right:auto
+    }
+    .pink-section__3fr-box .pink-section__box__discription-wrap,.pink-section__4fr-box .pink-section__box__discription-wrap{
+        padding-left: 0;
+    }
+    .pink-section__box__img-wrap{
+        padding-top: 40px;
+    }
+    .pink-section__3fr-box .pink-section__box__discription-wrap{
+        grid-column-start: 1;
+        grid-template-columns: auto;
+    }
+    .purple-section{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        /* grid-template-columns: 1fr; */
+        /* grid-auto-flow: */
+    }
+    .purple-section_right__content{
+        text-align: center;
+        padding-left: 0;padding-right: 0;
+        padding-top: 80px;
+        padding-bottom: 55px;
+    }
+    .purple-section__left__img-wrapper{
+        padding:0px;
+        padding-bottom: 10px;
+    }
+    .purple-section__left,.purple-section_right{
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .pink-section__box__img-wrap{
+        width: 210px;
     }
 }
