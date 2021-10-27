@@ -738,6 +738,7 @@ footer{
     color:#fff;
 }
 .purple-section_right__content{
+    overflow: hidden;
     padding-top: 20vh;padding-bottom:20vh;
     padding-left: 100px;
     padding-right: 30px;
