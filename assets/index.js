@@ -38,5 +38,7 @@ function faqEl(e){
 }
 
 function sandwich(e){
-    e.classList.toggle("active")
+    e.classList.toggle("active");
+    document.querySelector(".menu").classList.toggle("active");
+    document.querySelector("body").classList.toggle("modal-open")
 }
