@@ -201,9 +201,7 @@ footer{
     fill:var(--color-blue);
     color: var(--color-blue)
 }
-.--colorPing{
 
-}
 .--colorLightBlue{
     fill: #13c0d7;
     color: #13c0d7;
@@ -244,13 +242,6 @@ footer{
     padding-top:190px
 }
 
-.leftPadding{
-
-}
-
-.mobilePadding{
-
-}
 
 .mainPadding{
     padding-left: 9.8vw;
@@ -773,8 +764,6 @@ footer{
     text-align: center;
 }
 
-.faq-content__item{
-}
 .faq{
     padding-bottom: 30px;
 }
@@ -822,9 +811,7 @@ footer{
 .faq-content__item-discrioption-wrapper:first-child{
     margin-top:0px
 }
-.faq-content__item-discrioption{
-    /* padding:35px 40px */
-}
+
 .faq-content__item-discrioption__top{
     padding:35px 40px ;cursor: pointer;
     display:flex; justify-content:space-between;
@@ -1133,9 +1120,7 @@ BEING SOCIAL
     font-family: "Becky Extra";
     color:#fff;
 }
-.param-table .thead th{
-    /* display: inline-block; */
-}
+
 .param-table article{
     margin-top: 60px;margin-bottom:0 ;
 }
