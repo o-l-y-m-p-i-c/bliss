@@ -560,7 +560,7 @@ footer{
     bottom: -1px;
 }
 .banner-content{
-    padding-top: 215px;padding-bottom: 170px;
+    padding-top: 165px;padding-bottom: 170px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -597,6 +597,7 @@ footer{
         padding-top:170px;
         overflow: hidden;
     }
+    
 }
 /* end index page */
 
@@ -1654,7 +1655,12 @@ form.banner-content{
     }
 }
 
-
+@media screen and (max-width: 670px){
+    body{
+        margin-top:163.5px
+        /* margin-top: calc( 1em); */
+    }
+}
 .banner-index .banner-h1{
     color: #fff;
 }
@@ -1778,6 +1784,7 @@ form.banner-content{
 .mindful-eating__right{
     overflow: hidden;
     flex-basis: 50%; padding-left: 10.7%; padding-right:  10.7vw; box-sizing: border-box;
+    padding-bottom: 4px;
 }
 
 .why-bliss-healthy__title-wrapper{
