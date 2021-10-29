@@ -3,7 +3,10 @@ const scrollingWatch = {
     addClassScroll: 50,
     mobileWidthEnd: 1024,
     scrollingFlag: false,
+    maxChildHight:0,
     heightHeader: 0,
+    paddingBeforeScrolling:30*2,
+    mobilePaddings:0,
     y:''
 }
 window.onload = () => {
@@ -15,11 +18,7 @@ window.addEventListener('scroll', ()=>{
     watchHeader()
 })
 window.addEventListener('resize', ()=>{
-    // if (document.querySelector("body").scrollWidth > scrollingWatch.mobileWidthEnd) {
-        // document.querySelector("body").style.marginTop = `0px`
-    // }else{
         onLoadWatchHeader(scrollingWatch.mobileWidthEnd)
-    // }
 })
 
 function getScrollY(){
@@ -28,16 +27,37 @@ function getScrollY(){
 
 function onLoadWatchHeader(width){
     if (document.querySelector("body").scrollWidth <= width) {
+        document.querySelector('body').classList.add("mobile")
         if (scrollingWatch.y > scrollingWatch.addClassScroll) {
             let firstPromise = new Promise((resolve, reject) =>{
                 scrollingWatch.scrollingFlag = true;
-                scrollingWatch.heightHeader =document.querySelector('.cc-announcement').scrollHeight + document.querySelector('.header').scrollHeight;
-                resolve(scrollingWatch.heightHeader)
+                scrollingWatch.heightHeader = document.querySelector('.cc-announcement').scrollHeight + document.querySelector('.header').scrollHeight;
+                // scrollingWatch.maxChildHight = document.querySelector('.header').
+                let childrensOfHeader = document.querySelector('.header').children
+                let childreScrollHight = []
+                for (let i = 0; i < childrensOfHeader.length; i++) {
+                    childreScrollHight.push(childrensOfHeader[i].scrollHeight)
+                    
+                }
+                childreScrollHight = getMaxOfArray(childreScrollHight)
+                function getMaxOfArray(numArray) {
+                    return Math.max.apply(null, numArray);
+                  }
+                resolve([scrollingWatch.heightHeader,childreScrollHight])
             })
             firstPromise.then(
                 resolve =>{
+                    
                     if(resolve){
-                        document.querySelector('body').style.marginTop = `${resolve}px`
+                        if (!scrollingWatch.scrollingFlag) {
+                            console.log(resolve[0], "top")
+                            document.querySelector('body').style.marginTop = `${resolve[0]}px`
+                        }else{
+                            scrollingWatch.heightHeader = resolve[1] + document.querySelector('.cc-announcement').scrollHeight + scrollingWatch.paddingBeforeScrolling
+                            
+                            document.querySelector('body').style.marginTop = `${scrollingWatch.heightHeader}px`
+                        }
+                        
                         headerWrapper.classList.add('scrolled')
                     }
                     
@@ -46,24 +66,38 @@ function onLoadWatchHeader(width){
             
         }
         else{
-            let firstPromise = new Promise((resolve, reject)=>{
-                scrollingWatch.scrollingFlag = false
-                scrollingWatch.heightHeader=document.querySelector('.cc-announcement').scrollHeight + document.querySelector('.header').scrollHeight
-                resolve(scrollingWatch.heightHeader)
+            let firstPromise = new Promise((resolve, reject) =>{
+                scrollingWatch.scrollingFlag = false;
+                scrollingWatch.heightHeader = document.querySelector('.cc-announcement').scrollHeight + document.querySelector('.header').scrollHeight;
+                let childrensOfHeader = document.querySelector('.header').children
+                let childreScrollHight = []
+                for (let i = 0; i < childrensOfHeader.length; i++) {
+                    childreScrollHight.push(childrensOfHeader[i].scrollHeight)
+                }
+                childreScrollHight = getMaxOfArray(childreScrollHight)
+                function getMaxOfArray(numArray) {
+                    return Math.max.apply(null, numArray);
+                  }
+                resolve([scrollingWatch.heightHeader,childreScrollHight])
             })
             firstPromise.then(
                 resolve =>{
-                    if (resolve && !scrollingWatch.scrollingFlag) {
-                        console.log(resolve)
-                        document.querySelector('body').style.marginTop = `${resolve}px`
+                    if(resolve){
+                        if (scrollingWatch.scrollingFlag) {
+                            document.querySelector('body').style.marginTop = `${resolve[0]}px`
+                        }else{
+                            scrollingWatch.heightHeader = resolve[1] + document.querySelector('.cc-announcement').scrollHeight + scrollingWatch.paddingBeforeScrolling
+                            document.querySelector('body').style.marginTop = `${scrollingWatch.heightHeader}px`
+                        }
                         headerWrapper.classList.remove('scrolled')
                     }
                 }
             )
-        
+
         }
     }
     else{
+        document.querySelector('body').classList.remove("mobile")
         let top = 0
         if (document.querySelector('.cc-announcement').scrollHeight) {
             top = document.querySelector('.cc-announcement').scrollHeight
@@ -74,8 +108,10 @@ function onLoadWatchHeader(width){
 }
 function watchHeader(){
     if (scrollingWatch.y > scrollingWatch.addClassScroll) {
+        scrollingWatch.scrollingFlag= true
         headerWrapper.classList.add('scrolled')
     }else{
+        scrollingWatch.scrollingFlag= false
         headerWrapper.classList.remove('scrolled')
     }
 }

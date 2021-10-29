@@ -10,7 +10,7 @@
     <title>Product</title>
     <style>
         .photo-and-description__section{
-            background-image: url('./assets/product_2.jpg');
+            background-image: url('./assets/blueberry-ingredients.jpg');
         }
         @media screen and (max-width:1024px){
             .photo-and-description__section{
@@ -18,6 +18,11 @@
                 background-image: none;
             }
         }
+        .--bg-color-pink-deep{
+            background-color: #f8354a;
+        }
+        
+        
     </style>
 </head>
 <body class="">
@@ -77,9 +82,9 @@
                 </ul>
 
             </div>
-            <div class="menu">
+            <div class="menu" >
                 <div class="menu-inner">
-                    <ul>
+                    <ul class="menu-inner-list">
                         <li>
                             <a href="./about.html">
                                 Conócenos
@@ -103,6 +108,33 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="menu-supports-wrapper">
+                        <ul class="header-right-link__list">
+                            <li class="header-right-link__item">
+                                <a href="#">
+                                    Account
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-supports-list" style="display: flex;">
+                            <li><a href="#">
+                                <svg width="33.25" height="33.875">
+                                    <use xlink:href="#facebook">
+                                </svg>
+                            </a></li>
+                            <li><a href="#">
+                                <svg width="33.25" height="33.875">
+                                    <use xlink:href="#instagram">
+                                </svg>
+                            </a></li>
+                            <li><a href="#">
+                                <svg width="33.25" height="33.875">
+                                    <use xlink:href="#twitter">
+                                </svg>
+                            </a></li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
         </header>
@@ -113,7 +145,7 @@
                         <div  class="swiper mySwiper2 swiper-initialized swiper-horizontal swiper-pointer-events">
                             <div class="swiper-wrapper"   >
                                 <div class="swiper-slide"  >
-                                    <img src="./assets/product_1.jpg">
+                                    <img src="./assets/blueberry-banner.jpg">
                                 </div>
                                 <div class="swiper-slide"  >
                                     <img src="./assets/bannerIndex.jpg">
@@ -126,7 +158,7 @@
                         <div   class="swiper mySwiper   ">
                             <div class="swiper-wrapper"  >
                             <div class="swiper-slide"  >
-                                <img src="./assets/product_1.jpg">
+                                <img src="./assets/blueberry-banner.jpg">
                             </div>
                             <div class="swiper-slide"  >
                                 <img src="./assets/bannerIndex.jpg">
@@ -144,7 +176,7 @@
                 
                 
                 <form class="banner-content">
-                    <h1 class="banner-h1" data-aos="fade-left">
+                    <h1 class="banner-h1" data-aos="fade-left" data-aos-delay="50">
                         Blueberry Nostalgia
                     </h1>
                     <div class="stars-wrapper" data-aos="fade-left" data-aos-delay="100">
@@ -197,51 +229,24 @@
                     <p class="product-price" data-aos="fade-left" data-aos-delay="300">
                         $14.00
                     </p>
-                    <div class="inner-form__wrapper" style="">
-                        <div class="select-wrapper" style="position: relative;" data-aos="fade-left" data-aos-delay="350">
-                            <select class="banner-content__select" name="" id="">
+                    <div class="inner-form__wrapper">
+                        <div class="select-wrapper --blueberry" style="position: relative;" data-aos="fade-left" data-aos-delay="350">
+                            <select class="banner-content__select blueberry" name="" id="">
                                 <option selected >blueberry nostalgia</option>
                                 <option>blueberry nostalgia</option>
                             </select>
                             <span style="position: absolute; right:30px; top: 50%; transform:translateY(-50%); display: inline-block; pointer-events: none">
-                                <svg  style="fill:#ffff; width:35px; height:19px ">
+                                <svg   style="width:35px; height:19px ">
                                     <use xlink:href="#arrow-product"></use>
                                 </svg>
                             </span>
                         </div>
                         <style>
-                            .count-wrapper{
-                                display: flex; justify-content: space-between; column-gap: 20px; margin-top:40px
-                            }
-                            @media screen and (max-width:460px) {
-                                .count-wrapper{
-                                    flex-direction: column;
-                                    row-gap: 40px;
-                                }
-                            }
-                            .count-wrapper .count{
-                                width:100%; position:relative; display: flex; border: 2px solid #13c0d7;
-                            }
-                            .count-wrapper .count button{
-                                font-family: 'Oswald'; font-size: 46px; 
-                                padding-left: 15%; 
-                                padding-right: 10%;cursor: pointer;
-                                background:none; outline: none; border:none; color:#fff
-                            }
-                            .count-wrapper .count input[type="number"]{
-                                text-align: center;
-                                width: 100%; 
-                                /* height:100%;  */
-                                border: none; background:none;  
-                                outline:none; font-family:var(--font-quick); 
-                                font-weight: var(--font-weight-bold); 
-                                font-size: 30px; 
-                                color:#fff;appearance:textfield;-webkit-appearance: textfield; 
-                            }
+                            
                             
                         </style>
                         <div class="count-wrapper" data-aos="fade-left" data-aos-delay="400">
-                            <div class="count" >
+                            <div class="count blueberry" >
                                 <button class=" minus" >
                                     -
                                 </button>
@@ -343,9 +348,9 @@
                 
 
             </section>
-            <section class="param-table blueberry" style="background-image: url('./assets/background_1.jpg')">
+            <section class="param-table blueberry" style="background-image: url('./assets/blueberry-table.jpg')">
                 <div class="param-table__content-wrapper">
-                    <h2 data-aos="flip-left">
+                    <h2  data-aos="fade-left" data-aos-offset="200">
                         How do we stack up to the “classics”?
                     </h2>
                     <table id="table-desktop"  class="table-desktop" data-aos="fade-up" data-aos-offset="200">
@@ -550,7 +555,7 @@
                         </tbody>
                     </table>
                     <article class="mainPadding">
-                        <p>
+                        <p data-aos="fade-left" data-aos-offset="200"> 
                             NORMALIZED PER 38G SERVING. INFORMATION AS OF FEBRUARY 2021.
                         </p>
                     </article>
@@ -560,10 +565,10 @@
             <section class="photo-and-description__section" >
                 <div class="photo-and-description__wrapper mainPadding">
                     <div class="photo-and-description" >
-                        <h2 class=" --title --colorWhite" data-aos="fade-left">
+                        <h2 class=" --title --colorWhite" data-aos="fade-left" data-aos-offset="200">
                             Ingredients: 
                         </h2>
-                        <article class="photo-and-discrioption__describe --title --colorWhite" data-aos="fade-left" data-aos-offset="200">
+                        <article class="photo-and-discrioption__describe --title --colorWhite" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
                             <span>Milk Protein Blend</span>, 
                             <span>Sweetener Blend</span>,
                              <span>Oil Blend</span>, 
@@ -576,7 +581,7 @@
                              <span>Vegetable Juice<span>
                         </article>
                         
-                        <a href="#" class="photo-and-description__link"  data-aos="fade-left" data-aos-offset="200">
+                        <a href="#" class="photo-and-description__link --blueberry"  data-aos="fade-left" data-aos-offset="200" data-aos-delay="250">
                             <svg width="42" height="51">
                                 <use xlink:href="#see-nutritional"></use>
                             </svg>
@@ -586,29 +591,29 @@
                     </div>
                 </div>
                 <div class="mobile photo-and-description__mobile-img-wrapper">
-                    <img src="./assets/blueberry-foto-and-text.jpg" alt="">
+                    <img src="./assets/blueberry-ingredients.jpg" alt="">
                 </div>
             </section>
             <section class="testimonials__section" style=" background-color:#fceee3">
                 <div class="testimonials mainPadding">
-                        <h2 class=" --title --colorLightBlue" style=" margin: 0;" data-aos="flip-left">
+                        <h2 class=" --title --blueberry" style=" margin: 0;" data-aos="fade-right" data-aos-offset="200">
                             testimonials
                         </h2>
                         <div class="testimonials__table-wrapper">
                             <img class="desktop" src="./assets/testimonials.png" width="100%" alt="">
                             <img class="mobile" src="./assets/mobile-testimonials.png" width="100%" alt="">
                         </div>
-                        <a href="#" class=" button btn-blue" data-aos="flip-left" data-aos-offset="100">show more</a>
+                        <a href="#" class=" button btn-blue" data-aos="fade-right" data-aos-offset="200">show more</a>
                 </div>
             </section>
             <section class="faq-product__section">
                 <div class="faq-product mainPadding">
                     
                     <div class="faq-content__item">
-                        <h2 class="faq-product__title" data-aos="flip-left">
+                        <h2 class="faq-product__title --title --blueberry" data-aos="fade-right" data-aos-offset="200">
                             FAQ
                         </h2>
-                        <div class="faq-content__item-discrioption-wrapper" data-aos="fade-right">
+                        <div class="faq-content__item-discrioption-wrapper" data-aos="fade-right" data-aos-offset="200">
                             <div class="faq-content__item-discrioption" >
                                 <div class="faq-content__item-discrioption__top" onclick="faqEl(this)">
                                     <h4>What kind of sorcery is this? Where did all the carbs and sugar go?</h4>
@@ -627,7 +632,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-content__item-discrioption-wrapper" data-aos="fade-right">
+                        <div class="faq-content__item-discrioption-wrapper" data-aos="fade-right" data-aos-offset="200">
                             <div class="faq-content__item-discrioption">
                                 <div class="faq-content__item-discrioption__top" onclick="faqEl(this)">
                                     <h4>What kind of sorcery is this? Where did all the carbs and sugar go?</h4>
@@ -646,7 +651,7 @@
                         </div>
                     </div>
 
-                    <a class="button btn-blue " href="#" style="margin-top: 35px;" data-aos="flip-left" data-aos-offset="100">
+                    <a class="button btn-blue" href="#" style="margin-top: 35px;" data-aos="fade-right" data-aos-offset="200">
                         ALL FAQ
                     </a>
                 </div>
@@ -695,7 +700,7 @@
             </section>
         </main>
         <footer class="footerPadding">
-            <div class="footer" style="">
+            <div class="footer" >
                 <!-- first column -->
                 <div class="footer__column">
                     <h4>

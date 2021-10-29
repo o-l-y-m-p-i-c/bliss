@@ -4,176 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Product_4</title>
+    <title>Product</title>
     <style>
-        .banner-product{
-            background-image: url('./assets/product_1.jpg');
+        .photo-and-description__section{
+            background-image: url('./assets/tuttie-frutti-ingredients.jpg');
         }
-        input[number]::-webkit-outer-spin-button,input[number]::-webkit-inner-spin-button {    
-            display: none; 
-            /* <- Crashes Chrome on hover */    
-            -webkit-appearance: textfield;    
-            margin: 0;
-            appearance:textfield;
+        @media screen and (max-width:1024px){
+            .photo-and-description__section{
+                background-color: #617fc1;
+                background-image: none;
+            }
         }
-
-
-        .banner-product .banner-content{
-            margin: 0;
-            margin-left: auto;
-            max-width: 100%;
-            width: 580px;
-            text-align: left;
-            box-sizing: border-box;
-        }
-        .banner-product .banner-h1{
-            font-size:47px;color:#fff;
-        }
-        .stars-wrapper{
-            display: flex;
-            column-gap: 3px;
-            align-items: center
-        }
-        .stars-wrapper article{
-            margin-left: 13px;
-            font-family: var(--font-quick);
-            font-size:20px;
-            font-weight:var(--font-wight-regular);
-            color: #ffff;
-        }
-        .banner-content__article{
-            font-family: var(--font-quick);
-            font-size:20px;color: #ffff;
-            font-weight:var(--font-wight-medium);
-            margin-top: 40px;
-        }
-        .radio-btn__choose ~ label{
-            cursor: pointer;
-        }
-        .radio-btn__choose{
-            position:relative;
-            cursor: pointer;
-
-        }
-        .radio-btn__choose:checked::after{
-            content: '';
-            position:absolute;
-            width: 95%;height: 95%;
-            left: 50%;top:50%;
-            /* background-color: blue; */
-            border-radius: 50%;
-            transform: translate(-50%,-50%);
-            background-color:#fff;
-            
-        }
-        .radio-btn__choose::before{
-            content: '';
-            position:absolute;
-            width: 130%;height: 130%;
-            left: 50%;top:50%;
-            border-radius: 50%;
-            border: 1px solid #fff;
-            /* background-color: blue; */
-            transform: translate(-50%,-50%);
-            z-index: 0;
-        }
-        .banner-content__select{
-            padding: 30px 65px 30px 30px;
-            width: 100%;
-            font-family: var(--font-quick);
-            font-size: 28px;
-            font-weight:var(--font-wight-bold);
-            border: 2px solid #13c0d7;
-            background:none;
-            color:#fff;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            cursor: pointer;
-        }
-        .product-price{
-            font-family: "Becky Extra";
-            margin: 0;
-            font-size: 48px;color:#fff;
-            margin-top: 40px; 
-        }
-        .inner-form__wrapper a.button.btn-blue{
-            font-size:30px;
-            white-space:nowrap
-        }
-        .inner-form__wrapper input{
-            -webkit-appearance: textfield;
+        .--bg-color-pink-deep{
+            background-color: #f8354a;
         }
         
-        .stars-wrapper{
-            margin-top: 35px ;
-        }
-        .radio-btn__wrapper{
-            margin-top: 40px;;
-        }
-        .inner-form__wrapper{
-            margin-top: 40px;
-        }
-        .radio-btn__wrapper label{
-            color:#fff;
-            font-family: var(--font-motserrat) ;
-            font-size:18px;
-            font-weight:var(--font-weight-regular)
-        }
-        .radio-btn__wrapper p input{
-            -webkit-appearance: none;
-            appearance: none;
-            width: 13px; height: 13px
-        }
-        .photo-and-description__section{
-            background-position: left center; background-repeat: no-repeat; background-size: cover;min-height: 50vh;
-        }
-        .photo-and-description__wrapper {
-            display:flex;
-            justify-content:flex-end;
-
-        }
-        .photo-and-description article span {
-            text-decoration: underline;
-        }
-        .photo-and-description{
-            width:50%; padding-top:160px; padding-bottom:100px
-        }
-        .photo-and-description h2{
-            font-size: 46px; margin: 0;
-        }
-        .photo-and-discrioption__describe{
-            font-size: 46px; margin: 0;
-        }
-        .photo-and-description__link{
-            display: inline-flex; align-items: center; column-gap: 20px; font-family: var(--font-quick);font-weight: var(--font-weight-medium); color:#13c0d7;margin-top: 70px;
-        }
-        .faq-product__section a.button.btn-blue {
-            font-size:30px
-        }
-        .testimonials{
-            /* display: flex; */
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding-top: 90px;
-            padding-bottom: 65px
-        }
-        .testimonials__table-wrapper{
-            padding-top: 80px;
-            padding-bottom: 60px;
-        }
-        .testimonials h2{
-            text-transform: uppercase;
-        }
-        .testimonials a.button{
-            font-size: 30px;
-        }
-       
+        
     </style>
-
 </head>
 <body class="">
     <div class="content">
@@ -195,27 +45,27 @@
                 <nav>
                     <ul class="  --upperCase">
                         <li>
-                            <a href="#">
+                            <a href="./about.html">
                                 Conócenos
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./product_blueberry.html">
                                 Comprar
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./mindfulness.html">
                                 Subscripciones
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <div class="logo-wrap --textAlignCenter">
+                <a href="./index.html" class="logo-wrap --textAlignCenter">
                     <svg >
                         <use xlink:href="#logo"></use>
                     </svg>
-                </div>
+                </a>
                 <ul class="header-right --upperCase">
                     <li class="header-right__item account">
                         <a href="#">
@@ -232,15 +82,104 @@
                 </ul>
 
             </div>
-            
+            <div class="menu" >
+                <div class="menu-inner">
+                    <ul class="menu-inner-list">
+                        <li>
+                            <a href="./about.html">
+                                Conócenos
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="./product_blueberry.html">
+                                Comprar
+                            </a>
+                             
+                        </li>
+                        <li>
+                            <a href="./mindfulness.html">
+                                Subscripciones
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./faqs.html">
+                                faqs
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu-supports-wrapper">
+                        <ul class="header-right-link__list">
+                            <li class="header-right-link__item">
+                                <a href="#">
+                                    Account
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="menu-supports-list" style="display: flex;">
+                            <li><a href="#">
+                                <svg width="33.25" height="33.875">
+                                    <use xlink:href="#facebook">
+                                </svg>
+                            </a></li>
+                            <li><a href="#">
+                                <svg width="33.25" height="33.875">
+                                    <use xlink:href="#instagram">
+                                </svg>
+                            </a></li>
+                            <li><a href="#">
+                                <svg width="33.25" height="33.875">
+                                    <use xlink:href="#twitter">
+                                </svg>
+                            </a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
-            <div class="banner-wrapper banner-product mainPadding" style=" position:relative; ">
+            <div class="banner-wrapper banner-product " style=" position:relative; ">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div  class="swiper mySwiper2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                            <div class="swiper-wrapper"   >
+                                <div class="swiper-slide"  >
+                                    <img src="./assets/tuttie-frutti-banner.jpg">
+                                </div>
+                                <div class="swiper-slide"  >
+                                    <img src="./assets/bannerIndex.jpg">
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-button-next swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-9d7c8e472962a088" aria-disabled="true"></div> -->
+                            <!-- <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-9d7c8e472962a088" aria-disabled="false"></div> -->
+                            <span class="swiper-notification"  ></span>
+                        </div>
+                        <div   class="swiper mySwiper   ">
+                            <div class="swiper-wrapper"  >
+                            <div class="swiper-slide"  >
+                                <img src="./assets/tuttie-frutti-banner.jpg">
+                            </div>
+                            <div class="swiper-slide"  >
+                                <img src="./assets/bannerIndex.jpg">
+                            </div>
+
+
+                            
+                            </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
                 <form class="banner-content">
-                    <h1 class="banner-h1">
-                        Blueberry Nostalgia
+                    <h1 class="banner-h1" data-aos="fade-left" data-aos-delay="50">
+                        Tutti Frutti Adventure
                     </h1>
-                    <div class="stars-wrapper">
+                    <div class="stars-wrapper" data-aos="fade-left" data-aos-delay="100">
                         <div class="star-item">
                             <svg  width="24" height="24" style="fill: var(--color-light-blue)">
                                 <use xlink:href="#star"></use>
@@ -270,50 +209,53 @@
                             (792 Reviews)
                         </article>
                     </div>
-                    <article class="banner-content__article">
+                    <article class="banner-content__article" data-aos="fade-left" data-aos-delay="200">
                         A fruity cereal that isn’t loopy. We’ve reimagined your favorite fruit-forward childhood cereal with only 4g net carbs, 13g complete protein, 150 calories, and nothing artificial.
                     </article>
                     <div class="radio-btn__wrapper">
-                        <p>
+                        <p data-aos="fade-left" data-aos-delay="250">
                             <input checked class="radio-btn__choose" name="radio-btn" type="radio" id="radio-btn-1" value="ONE-TIME PURCHASE: - $1.95 / BOWL">
                             <label class="radio-btn"  for="radio-btn-1">
                                 ONE-TIME PURCHASE: - $1.95 / BOWL
                             </label>
                         </p>
-                        <p>
+                        <p data-aos="fade-left" data-aos-delay="400">
                             <input class="radio-btn__choose" name="radio-btn" type="radio" id="radio-btn-2" value="ONE-TIME PURCHASE: - $1.95 / BOWL">
                             <label class="radio-btn"  for="radio-btn-2">
                                 ONE-TIME PURCHASE: - $1.95 / BOWL
                             </label>
                         </p>
                     </div>
-                    <p class="product-price">
+                    <p class="product-price" data-aos="fade-left" data-aos-delay="300">
                         $14.00
                     </p>
-                    <div class="inner-form__wrapper" style="width:100%; max-width: 537px; ">
-                        <div class="" style="position: relative;">
-                            <select class="banner-content__select" name="" id="">
+                    <div class="inner-form__wrapper">
+                        <div class="select-wrapper --tuttie-frutti" style="position: relative;" data-aos="fade-left" data-aos-delay="350">
+                            <select class="banner-content__select tuttie-fruttie" name="" id="">
                                 <option selected >blueberry nostalgia</option>
                                 <option>blueberry nostalgia</option>
                             </select>
                             <span style="position: absolute; right:30px; top: 50%; transform:translateY(-50%); display: inline-block; pointer-events: none">
-                                <svg  style="fill:#ffff; width:35px; height:19px ">
+                                <svg   style="width:35px; height:19px ">
                                     <use xlink:href="#arrow-product"></use>
                                 </svg>
                             </span>
                         </div>
-                        
-                        <div class="" style="display: flex; justify-content: space-between; column-gap: 20px; margin-top:40px">
-                            <div class="" style="width:100%; position:relative; display: flex; border: 2px solid #13c0d7;">
-                                <button style="font-family: 'Oswald'; font-size: 46px; padding-left: 30px; padding-right: 30px;background:none; outline: none; border:none; color:#fff">
+                        <style>
+                            
+                            
+                        </style>
+                        <div class="count-wrapper" data-aos="fade-left" data-aos-delay="400">
+                            <div class="count tuttie-fruttie" >
+                                <button class=" minus" >
                                     -
                                 </button>
-                                <input type="number" value="0" min="0" style="text-align: center;width: 100%; height:100%; border: none; background:none;  outline:none; font-family:var(--font-quick); font-weight: var(--font-wight-bold); font-size: 30px; color:#fff;" />
-                                <button style="font-family: 'Oswald'; font-size: 46px;padding-left: 30px; padding-right: 30px;background:none; outline: none; border:none; color:#fff">
+                                <input type="number" value="0" min="0"  />
+                                <button >
                                     +
                                 </button>
                             </div>
-                            <a class="button btn-blue" href="">
+                            <a class="button btn-tuttie-fruttie" href="">
                                 Add to cart
                             </a>
                         </div>
@@ -323,33 +265,107 @@
                 </form>
                 
             </div>
-            <section class="running-row --bg-color-blue">
+            <section class="running-row --bg-color-pink-deep">
                 
-                
+                <div class="marquee">
+                    <article class="row-wrap">
+                        <ul class="row-flex">
+                            <li> 
+                                <span>
+                                    <svg width="24.969" height="17.969">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                Free Shipping          
+                            </li>
+                            <li> 
+                                <span>
+                                    <svg width="24.969" height="17.969">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                low carb          
+                            </li>
+                            <li> 
+                                <span>
+                                    <svg width="24.969" height="17.969">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                no grain
+
+                            </li>
+                            <li> 
+                                <span>
+                                    <svg width="24.969" height="17.969">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                0 sugar
+
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="row-wrap">
+                        <ul class="row-flex">
+                            <li> 
+                                <span>
+                                    <svg width="24.969" height="17.969">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                Free Shipping          
+                            </li>
+                            <li> 
+                                <span>
+                                    <svg width="24.969" height="17.969">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                low carb          
+                            </li>
+                            <li> 
+                                <span>
+                                    <svg width="24.969" height="17.969">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                no grain
+
+                            </li>
+                            <li> 
+                                <span>
+                                    <svg width="24.969" height="17.969">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </span>
+                                0 sugar
+
+                            </li>
+                        </ul>
+                    </article>
+                </div>
                 
 
             </section>
-            
-            <style>
-                
-            </style>
-
-            <section class="param-table" style="background-image: url('./assets/background_1.jpg')">
-                <div class="" style="display: grid; justify-content: center; ">
-                    
-                    <h2>
+            <section class="param-table tuttie-fruttie" style="background-image: url('./assets/tuttie-frutti-table.jpg')">
+                <div class="param-table__content-wrapper">
+                    <h2  data-aos="fade-left" data-aos-offset="200">
                         How do we stack up to the “classics”?
                     </h2>
-                    <table id="table-desktop" class="table-desktop">
+                    <table id="table-desktop"  class="table-desktop" data-aos="fade-up" data-aos-offset="200">
                             <thead class="thead">
-                                <tr>
-                                    <th class=""> 
+                                <tr class="first-row row">
+                                    <th class="zero-column">
+                                        
+                                    </th>
+                                    <th class="first-column column"> 
                                         <div class="header-title">
                                             Proteina
                                         </div>
                                         
                                     </th>
-                                    <th class=" ">
+                                    <th class="first-column column">
                                         <div class="header-title">
                                             Carbohidratos Netos
                                         </div>
@@ -357,21 +373,21 @@
                                         
                                     </th>
                                     
-                                    <th class=" ">
+                                    <th class="first-column column">
                                         <div class="header-title">
                                             Azúcar
                                         </div>
                                         
                                         
                                     </th>
-                                    <th class=" ">
+                                    <th class="first-column column">
                                         <div class="header-title">
                                             grain<br>free
                                         </div>
                                         
                                         
                                     </th>
-                                    <th class=" ">
+                                    <th cclass="first-column column">
                                         <div class="header-title">
                                             gluten<br>free
                                         </div>
@@ -380,50 +396,58 @@
                                 </tr>
                              </thead>
                              <tbody>
-                                 <tr class="table__top">
-                                    <td >
+                                <tr class="table__top second-row row" >
+                                    <td class="zero-column">
+                                        <svg width="131" height="48" style="max-width:100%; height:auto">
+                                            <use xlink:href="#table-bliss"></use>
+                                        </svg>
+                                    </td>
+                                    <td class="first-column column">
                                         8g - 10g
                                         
                                     </td>
-                                    <td>
+                                    <td class="first-column column">
                                         7g
                                         
                                     </td>
-                                    <td>
+                                    <td class="first-column column">
                                         0g
                                         
                                     </td>
-                                    <td>
+                                    <td class="first-column column">
                                         <svg width="38" height="38" >
                                             <use xlink:href="#smile-good"></use>
                                         </svg>
                                         
                                     </td>
-                                    <td>
+                                    <td class="first-column column">
                                         <svg width="38" height="38" >
                                             <use xlink:href="#smile-good"></use>
                                         </svg>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
+                                <tr class="third-row row">
+                                    <td class="zero-column">
+                                        ELLOS
+                                    </td>
+                                    <td class="first-column column">
                                         1g-3g
                                         
                                     </td>
-                                    <td>
+                                    <td class="first-column column">
                                         20g - 30g
                                     
                                     </td>
-                                    <td>
+                                    <td class="first-column column">
                                         11g - 13g
                                         
                                     </td> 
-                                    <td>
+                                    <td class="first-column column">
                                         <svg width="38" height="38">
                                             <use xlink:href="#smile-sad"></use>
                                         </svg>
                                     </td>
-                                    <td>
+                                    <td class="first-column column"> 
                                         <svg width="38" height="38">
                                             <use xlink:href="#smile-sad"></use>
                                         </svg>
@@ -437,78 +461,114 @@
                        
                     </table>
   
-                    <table class="table-mobile" style="display:none">
+                    <table class="table-mobile" data-aos="fade-up" data-aos-offset="200">
+                        <thead>
+                            <tr class="first-row row">
+                                <th class="first-column column"></th>
+                                <th class="second-column column">
+                                    <svg width="131" height="48" style="max-width:100%; height:auto">
+                                        <use xlink:href="#table-bliss"></use>
+                                    </svg>
+                                </th>
+                                <th class="third-column column">
+                                    ELLOS
+                                </th>
+                            </tr>
+                        </thead>
                         <tbody>
-                            <tr>
-                                <th>
-                                    Proteina
-                                </th> 
-                                <td>
+                            <tr class="thead second-row row">
+                                <td class="first-column column">
+                                   <div class="header-title">
+                                       Proteina
+                                   </div>
+                                </td> 
+                                <td class="second-column column">
                                     8g - 10g
                                 </td>
-                                <td>
-                                    1g-3g
+                                <td class="third-column column">
+                                    1g - 3g
                                 </td>
                             </tr>
-                            <tr>
-                                <th>
-                                    Carbohidratos<br>Netos
-                                </th> 
-                                <td>
+                            <tr class="thead third-row row">
+                                <td class="first-column column">
+                                    <div class="header-title">
+                                        Carbohidratos<br>Netos
+                                    </div>
+                                </td> 
+                                <td class="second-column column">
                                     7g
                                 </td>
-                                <td>
+                                <td class="third-column column">
                                     20g - 30g
                                 </td>
                             </tr>
-                            <tr>
-                                <th>
-                                    Azúcar
-                                </th> 
-                                <td>
+                            <tr class="thead forth-row row"> 
+                                <td class="first-column column">
+                                    <div class="header-title">
+                                        Azúcar
+                                   </div>
+                                    
+                                </td> 
+                                <td class="second-column column">
                                     0g
                                 </td>
-                                <td>
+                                <td class="third-column column">
                                     11g - 13g
                                 </td>
                             </tr>
-                            <tr>
-                                <th>
-                                    grain <br>free
-                                </th> 
-                                <td>
-                                    Smile
+                            <tr class="thead fifth-row row">
+                                <td class="first-column column">
+                                    <div class="header-title">
+                                        grain <br>free
+                                    </div>
+                                    
+                                </td> 
+                                <td class="second-column column">
+                                    <svg width="38" height="38" >
+                                        <use xlink:href="#smile-good"></use>
+                                    </svg>
                                 </td>
-                                <td>
-                                    Smile
+                                <td class="third-column column">
+                                    <svg width="38" height="38" >
+                                        <use xlink:href="#smile-sad"></use>
+                                    </svg>
                                 </td>
                             </tr>
-                            <tr>
-                                <th>
-                                    gluten<br>free
-                                </th> 
-                                <td>
-                                    Smile
+                            <tr class="thead sixth-row row" >
+                                <td class="first-column column">
+                                    <div class="header-title">
+                                        gluten<br>free
+                                    </div>
+                                    
+                                </td> 
+                                <td class="second-column column">
+                                    <svg width="38" height="38" >
+                                        <use xlink:href="#smile-good"></use>
+                                    </svg>
                                 </td>
-                                <td>
-                                    Smile
+                                <td class="third-column column">
+                                    <svg width="38" height="38" >
+                                        <use xlink:href="#smile-sad"></use>
+                                    </svg>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-
-                    <h3>
-                        I hope you love it as <br>much as we do
-                    </h3>
+                    <article class="mainPadding">
+                        <p data-aos="fade-left" data-aos-offset="200"> 
+                            NORMALIZED PER 38G SERVING. INFORMATION AS OF FEBRUARY 2021.
+                        </p>
+                    </article>
+                    
                 </div>
             </section>
-            <section class="photo-and-description__section" style="background-image: url('./assets/product_2.jpg');">
+            <section class="photo-and-description__section" >
                 <div class="photo-and-description__wrapper mainPadding">
                     <div class="photo-and-description" >
-                        <h2 class=" --title --colorWhite" >
+                        <h2 class=" --title --colorWhite" data-aos="fade-left" data-aos-offset="200">
                             Ingredients: 
                         </h2>
-                        <article class="photo-and-discrioption__describe --title --colorWhite" >
+                        <article class="photo-and-discrioption__describe --title --colorWhite" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
                             <span>Milk Protein Blend</span>, 
                             <span>Sweetener Blend</span>,
                              <span>Oil Blend</span>, 
@@ -521,7 +581,7 @@
                              <span>Vegetable Juice<span>
                         </article>
                         
-                        <a href="#" class="photo-and-description__link"  >
+                        <a href="#" class="photo-and-description__link --tuttie-frutti"  data-aos="fade-left" data-aos-offset="200" data-aos-delay="250">
                             <svg width="42" height="51">
                                 <use xlink:href="#see-nutritional"></use>
                             </svg>
@@ -530,29 +590,31 @@
                         
                     </div>
                 </div>
+                <div class="mobile photo-and-description__mobile-img-wrapper">
+                    <img src="./assets/tuttie-frutti-ingredients.jpg" alt="">
+                </div>
             </section>
-            <style>
-            </style>
             <section class="testimonials__section" style=" background-color:#fceee3">
                 <div class="testimonials mainPadding">
-                        <h2 class=" --title --colorLightBlue" style="font-size:51px; margin: 0;">
+                        <h2 class=" --title --tuttie-frutti" style=" margin: 0;" data-aos="fade-right" data-aos-offset="200">
                             testimonials
                         </h2>
                         <div class="testimonials__table-wrapper">
-                            <img src="./assets/testimonials.png" alt="">
+                            <img class="desktop" src="./assets/testimonials.png" width="100%" alt="">
+                            <img class="mobile" src="./assets/mobile-testimonials.png" width="100%" alt="">
                         </div>
-                        <a href="#" class=" button btn-blue">show more</a>
+                        <a href="#" class=" button btn-red" data-aos="fade-right" data-aos-offset="200">show more</a>
                 </div>
             </section>
             <section class="faq-product__section">
                 <div class="faq-product mainPadding">
                     
                     <div class="faq-content__item">
-                        <h2 class="faq-product__title">
+                        <h2 class="faq-product__title --title --tuttie-frutti" data-aos="fade-right" data-aos-offset="200">
                             FAQ
                         </h2>
-                        <div class="faq-content__item-discrioption-wrapper">
-                            <div class="faq-content__item-discrioption">
+                        <div class="faq-content__item-discrioption-wrapper" data-aos="fade-right" data-aos-offset="200">
+                            <div class="faq-content__item-discrioption" >
                                 <div class="faq-content__item-discrioption__top" onclick="faqEl(this)">
                                     <h4>What kind of sorcery is this? Where did all the carbs and sugar go?</h4>
                                     <span>
@@ -570,7 +632,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="faq-content__item-discrioption-wrapper">
+                        <div class="faq-content__item-discrioption-wrapper" data-aos="fade-right" data-aos-offset="200">
                             <div class="faq-content__item-discrioption">
                                 <div class="faq-content__item-discrioption__top" onclick="faqEl(this)">
                                     <h4>What kind of sorcery is this? Where did all the carbs and sugar go?</h4>
@@ -589,7 +651,7 @@
                         </div>
                     </div>
 
-                    <a class="button btn-blue " href="#" style="margin-top: 35px;">
+                    <a class="button btn-red" href="#" style="margin-top: 35px;" data-aos="fade-right" data-aos-offset="200">
                         ALL FAQ
                     </a>
                 </div>
@@ -597,8 +659,8 @@
             <section class="being-social__wrapper ">
                 <div class="being-social">
                     <div class="being-social__top">
-                        <h2>Being social - being supportive</h2>
-                        <a href="#" class="being-social__top__link">
+                        <h2 data-aos="fade-right">Being social - being supportive</h2>
+                        <a href="#" class="being-social__top__link" data-aos="fade-right" data-aos-delay="300">
                             <svg height="20" width="20">
                                 <use xlink:href="#instagram"></use>
                             </svg>
@@ -638,7 +700,7 @@
             </section>
         </main>
         <footer class="footerPadding">
-            <div class="footer" style="">
+            <div class="footer" >
                 <!-- first column -->
                 <div class="footer__column">
                     <h4>
@@ -730,6 +792,7 @@
 
     <script src="./assets/index.js">    </script>
     <script src="./assets/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const beingSocial = new Swiper('.beingSocial-wrapper', {
             direction: 'horizontal',
@@ -741,16 +804,45 @@
                 nextEl: '.button-slider-right',
                 prevEl: '.button-slider-left',
             },
+            
         });
-        
+
+        const productBannerTumb = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            watchSlidesProgress: true,
+            
+            breakpoints:{
+                0:{
+                    direction:"horizontal",
+                    centeredSlides: true,
+                    spaceBetween:4
+                },
+                1025:{
+                    direction:"vertical",
+                    centeredSlides:false,
+                    spaceBetween: 30,
+                }
+            }
+        });
+        const productBanner = new Swiper(".mySwiper2", {
+            spaceBetween: 0,
+            navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+            swiper: productBannerTumb,
+            },
+        });
+        AOS.init();
+
     </script>
-    
-    
 </body>
 </html>
 
 
 <svg class="svg-sprite">
+    
     <symbol id="logo" viewBox="0 0 227 83" >
         <image id="Vector_Smart_Object_copy" data-name="Vector Smart Object copy" width="227" height="83" xlink:href="data:img/png;base64,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"/>
     
@@ -786,7 +878,7 @@
 
     </symbol>
     <symbol id="smile-good" viewBox="0 0 38 38">
-        <image width="38" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAACbUlEQVRYhc3YS4hOYRzH8c+cBqUmcl24ZGKhKPdsXCKRsjApFpRbERuiiK0sbCgLuRQSFkpYIJcSNYaNMUjIZbLA5DLuuUzSMz1H09tc3nfMO+/51rt4zznPOd9zzvP8z/P8ymq3jVAg5RiHSRiL4RiIQUjwEW/xCg9wD7V4X8hlygs4tg+WYAEmYGie7b6gDldxHM+6SqwMi7AV4wu8mUAFpsXfchzGXnxur1HSwUnDUzkS73RyJ6RyqcQOnMeMzoqF13U23mWv/xTKJTy9M1hZqNh0nIodvFj0wwFsyFdsIk5gVBGlUnpgF1Z0JDYE+zGsG6RSQjfZg1ltiYXRtx1TulEqpS92Y0BrYvOxtARSKaEUbUr/pGK9sT4W0VKyKn5N/onNxJwSSwUGY7UoFkbGwiLUqs4yOxT2JNaTuRmRCozG1CQW0YKnGEWkZ6ilSdrZMsaYJD66rFGZxIle1qhI4jvNGuVB7E8GxZrr2O8MeOTSlMRFQ9ZoDGIPMyhWH8TuZEAklxdB7D6eZ0jqF6qD2DtczIBQSuhaN4NYE07jeza8XEJDOh+rychTa8BRLSaKP3AQ30rr1bwQeiRnzn85tS0Rt2J0IFcssBPXS+D1BhvxId2QK/Yaa/GkG6VC99mM2y03trYSfxxXxk+7QSpUgi04mbujreyiJkZP1UWUCiNwHfa1trO9tCckgVU4hK9dLHUtrsyOtXVAR/lYiCzXYBmudIFQXVxtV8VR2Cb5BnHncCOGbYsxD/3zbPsztg3nuBA+0Pk0KiQhbIwnD/UupEEh2AsBzMiYEqWBSBB5GbPWu3G01eNT3lfCX+fDaklzMThIAAAAAElFTkSuQmCC"/>
+        <rect x="0" y="0" width="38" height="38" rx="50" ry="50"/>
         <image width="38" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAEdElEQVRYhb2Ya4hVVRTHfzONrzK10hwryx6UjvayQMsG0zRQCvuQQklYUBkVRdKHIjJ7iVLSy15QoGgUlPnBQCkIsVCpzLTSqMTyWWqZia98/GPF/9Dhds6cc6eZu2B9uHuvtfb/rrNee9dJohV0HnA1MBQYCJwKNAJ1wB/ANuAnYCWwDPgK+KuaY6oB1hmYANwCjATqvX4A2AFsB8JYV+BMoHtK91tgPjAP2FrqtABWgsdJWqN/6SNJ90m6QlJvSR0qbJwkqb+kiZLekrTHmr9JeljS8UVnFoGKQ+fZ6BFJsyVdVPLPpLlR0hRJW2zrM0lDWwtskKR1NvShpEtaAaiSe0maZZsHJE2qFthVkrbbwFRJx7UBqDSPS9l/oCywJkk7JB2VdHMbA0rzhZI2GNx/PFcpHEG7Nk+4HTicsFnSPn+lXGCvGNT0GoBKeLQTK+K5RxawEZKOSVohqVMNgQU/bYc8mawlBTaK5VKgGRgGLM8qxsAY4FJX8ZD/vKBM9gWuc2fYCCwCdmfIRVH+Ajjd9n9MEI8y4gU5/6inpMWpApvQrBYy9kZJOyvkv5M0LEd+kmVmpj/lfC82ZyjUS3rP+wsljZd0q6SvvXZ/hs5gSftd8R9yeZhu+c0uuJU6XV1CtknqlmTiLknrJTVkKFxsg8sl1aXWT5O018Y6V+gk3WJCxfpjXp+S47WXvD+2ARgCnALMBY5kfP9o0G8Db7hJJxQTxDTgjAy9j4GDwPsV668C/YEvc2IyYvBeYDhuqnJM1DITs7iPpEOSlkU2XmC06wsyrBb0yz8ZCU0B7BzgcE4a15oiVHYCJwawTsChaifMdqT9QEN9RUDnURTXu4E7/geeSLKnwhslzqqLgFsq6bDTPy8oo4hudG3q0crAXuQkG1ggtywSoN5pH2WjZwv/4iiwAOgCjG+Ft84HRgOrgR8KvBWla08AW+vFAQXGXwP2AY8CfaoENtOx/FxBLDc6GdeF666xi18o8TketOwnHpPLfMKk2i/O6SxpHmvZZ+NHd0m/SvpeUscCxeibr1v5G89SebIDJL1r2ZU5/bGSX7T8qGTjTS+MLKEciTAjNTFED53mxj7RXl3o4S9oiSt6kd0enkY2RUNPFptt5IMqsmy45Y9ljENBqyXdVsVFZrL1nlBqUIxsWAJcC4zwEFiWIlgHA72BE5zl0d7W5AwFWdTNzwi9gEHAz2nEiddWSerSjo06i5/x2VOTvUqh2RZ4voagbkg5pGsesG6+jATdVQNQl/s9409Jl6X3soTPlbTV4O5sR1BDU7fxiZX7Lf2TRGlGifpWLcfIvdv2J2fptmSwya8ySaUf0gaA+kp62TYD2E15skWGTk7dzoPmFj0f5fDZkh6X9LvtfOpLTq5OWcNjUkmRtJhHfHvv51tSvbmDK32Ewz0edw5ab7Mf/ApDo5qnzhiNrgdudyGO3wltAfZ66Iwn0bg5dUztrwLmAO8Au8oc1trH4X7Aleao/Gd5jooOEmPNBmCTnxpWeLQqfxDwN0VWNbl4eqk9AAAAAElFTkSuQmCC"/>
     </symbol>
     <symbol id="smile-sad" viewBox="0 0 39 38">
@@ -800,5 +892,17 @@
     </symbol>
     <symbol id="cross" viewBox="0 0 20.84 20.843">
         <path id="Shape_3_copy_6" fill="#853398" data-name="Shape 3 copy 6" class="cls-1" d="M1692.15,817.574h-2.56v-9.131h-0.02V808.4h-9.13v-2.562h9.13v-9.132h2.56v9.131h0.02v0.044h9.13v2.562h-9.13v9.131Z" transform="translate(-1680.44 -796.719)"/>
+    </symbol>
+    <symbol id="table-bliss" viewBox="0 0 131 48">
+        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="131" height="48" xlink:href="data:img/png;base64,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"/>
+    </symbol>
+    <symbol id="smile-happy" viewBox="0 0 38 38">
+        <image width="38" height="38" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAEdElEQVRYhb2Ya4hVVRTHfzONrzK10hwryx6UjvayQMsG0zRQCvuQQklYUBkVRdKHIjJ7iVLSy15QoGgUlPnBQCkIsVCpzLTSqMTyWWqZia98/GPF/9Dhds6cc6eZu2B9uHuvtfb/rrNee9dJohV0HnA1MBQYCJwKNAJ1wB/ANuAnYCWwDPgK+KuaY6oB1hmYANwCjATqvX4A2AFsB8JYV+BMoHtK91tgPjAP2FrqtABWgsdJWqN/6SNJ90m6QlJvSR0qbJwkqb+kiZLekrTHmr9JeljS8UVnFoGKQ+fZ6BFJsyVdVPLPpLlR0hRJW2zrM0lDWwtskKR1NvShpEtaAaiSe0maZZsHJE2qFthVkrbbwFRJx7UBqDSPS9l/oCywJkk7JB2VdHMbA0rzhZI2GNx/PFcpHEG7Nk+4HTicsFnSPn+lXGCvGNT0GoBKeLQTK+K5RxawEZKOSVohqVMNgQU/bYc8mawlBTaK5VKgGRgGLM8qxsAY4FJX8ZD/vKBM9gWuc2fYCCwCdmfIRVH+Ajjd9n9MEI8y4gU5/6inpMWpApvQrBYy9kZJOyvkv5M0LEd+kmVmpj/lfC82ZyjUS3rP+wsljZd0q6SvvXZ/hs5gSftd8R9yeZhu+c0uuJU6XV1CtknqlmTiLknrJTVkKFxsg8sl1aXWT5O018Y6V+gk3WJCxfpjXp+S47WXvD+2ARgCnALMBY5kfP9o0G8Db7hJJxQTxDTgjAy9j4GDwPsV668C/YEvc2IyYvBeYDhuqnJM1DITs7iPpEOSlkU2XmC06wsyrBb0yz8ZCU0B7BzgcE4a15oiVHYCJwawTsChaifMdqT9QEN9RUDnURTXu4E7/geeSLKnwhslzqqLgFsq6bDTPy8oo4hudG3q0crAXuQkG1ggtywSoN5pH2WjZwv/4iiwAOgCjG+Ft84HRgOrgR8KvBWla08AW+vFAQXGXwP2AY8CfaoENtOx/FxBLDc6GdeF666xi18o8TketOwnHpPLfMKk2i/O6SxpHmvZZ+NHd0m/SvpeUscCxeibr1v5G89SebIDJL1r2ZU5/bGSX7T8qGTjTS+MLKEciTAjNTFED53mxj7RXl3o4S9oiSt6kd0enkY2RUNPFptt5IMqsmy45Y9ljENBqyXdVsVFZrL1nlBqUIxsWAJcC4zwEFiWIlgHA72BE5zl0d7W5AwFWdTNzwi9gEHAz2nEiddWSerSjo06i5/x2VOTvUqh2RZ4voagbkg5pGsesG6+jATdVQNQl/s9409Jl6X3soTPlbTV4O5sR1BDU7fxiZX7Lf2TRGlGifpWLcfIvdv2J2fptmSwya8ySaUf0gaA+kp62TYD2E15skWGTk7dzoPmFj0f5fDZkh6X9LvtfOpLTq5OWcNjUkmRtJhHfHvv51tSvbmDK32Ewz0edw5ab7Mf/ApDo5qnzhiNrgdudyGO3wltAfZ66Iwn0bg5dUztrwLmAO8Au8oc1trH4X7Aleao/Gd5jooOEmPNBmCTnxpWeLQqfxDwN0VWNbl4eqk9AAAAAElFTkSuQmCC"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 24 24"> 
+        <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+    </symbol>
+    <symbol id="check" viewBox="0 0 24.969 17.969">
+        <path id="Shape_593_copy" data-name="Shape 593 copy" class="cls-1" d="M170.263,952.075a0.932,0.932,0,0,1,1.318,0l7.051,7.05a0.932,0.932,0,1,1-1.318,1.318l-7.051-7.05A0.932,0.932,0,0,1,170.263,952.075Zm23.422-8.053a0.932,0.932,0,0,1,0,1.318l-15.1,15.1a0.932,0.932,0,0,1-1.318-1.319l15.1-15.1A0.933,0.933,0,0,1,193.685,944.022Z" transform="translate(-169.5 -943.25)"/>
     </symbol>
 </svg>
