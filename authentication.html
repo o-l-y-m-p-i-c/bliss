@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Cart</title>
+    <title>Tamplate</title>
 </head>
 <body>
     <div class="content">
@@ -120,97 +120,38 @@
                 </div>
             </div>
         </header>
-        <main class="mainPadding  --bg-color-light-yellow">
-            <section class="cart-page__head banner-padding-top">
-                <h1 class="--title">
-                    Your cart
-                </h1>
+        <main>
+            <section class="form-auth">
                 <div class="">
-                    <p>
-                        Your cart is currently empty.
-                    </p>
-                    <p class="cart__link-back">
-                        <a href="./product.html">
-                            Continue shopping
-                        </a>
-                    </p>
+                    <h1 class="--title">Login</h1>
                 </div>
-            </section>
-            
-            <section  class="">
-                <form action="" id="cart-form" class="cart__form inner-container">
-                    <table class="cart__table" >
-                        <thead class="cart__head">
-                            <tr class="cart__row">
-                            <th id="head-img" style="text-align: left;">Product</th>
-                            <!-- <th id="head-empty"></th> -->
-                            <th id="head-price">Price</th>
-                            <th id="head-quantity">Quantity</th>
-                            <th id="head-total">Total</th>
-                        </tr>
-                        </thead>
-                        <tbody class="cart__body">
-                            <tr class="cart__row" >
-                                <td id="head-img__wrapper" >
-                                    <div class="head-img__inner" >
-                                        <div class="head-img" >
-                                            <img src="./assets/aboutPage_1.jpg"  >
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="">
-                                        <a href="" class="product-naming">Naming</a>  
-                                        <p>
-                                            <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="cart__remove-btn">Remove</a>
-                                        </p>
-                                       
-                                    </div>
-                                </td>
-                                <td id="head-price">
-                                    <span>$1212</span>
-                                    
-                                    <div class="quantity-in-price">
-                                        <label for="">Qty</label>
-                                        <input class="lll" min="1" value="1" type="number"  />
-                                    </div>
-                                    
-                                </td>
-                                <td id="head-quantity" class="cart__quantity">
-                                    
-                                    <input class="lll" min="1" value="1" type="number"  />
-                                    <div class="cart__quantity-btns">
-                                    </div>
-                                    
-                                </td>
-                                <td id="head-total">
-                                    $2424
-                                    
-                                </td>
-                            </tr>
-                            
-                            
-                        </tbody>
-                        
-                    </table>
-                    <div class="cart__total" style="text-align: right;">
-                        <span>
-                            Subtotal
-                        </span>
-                        <span>
-                            $
-                            USD
-                        </span>
+                <form class="form-authorization inner-container" action="">
+                    <div  class="auth__input-text">
+                        <label for="email">Email</label>
+                        <input id="email" type="text">
                     </div>
-                    <p class="note-area">
-                        <label for="note">Add a note to your order</label>
-                        <textarea id="note" name="note" ></textarea>
-                      </p>
-                    <div class="cart-policies rte">Taxes and shipping calculated at checkout
+                    <div class="auth__input-text">
+                        <label id="label" for="pass">Password</label>
+                        <input id="pass" type="password">
                     </div>
-                    <div class="cart-form__button-wrap" style="display:flex; justify-content:center; column-gap: 20px; flex-wrap: wrap; row-gap: 20px; padding-bottom: 20px;">
-                        <input class="button submit" type="submit" value="Update" name="update">
-                        <input class="button submit" type="submit" value="Chekout" name="chekout">
-                    </div>   
+                    <div class="form-authorization__bottom">
+                        <a href="#">
+                        Forgot your password?
+                        </a>
+                        <div class="">
+                            <input type="submit"class="auth-btn button" value="SIGN IN">
+                        </div>
+                        <a href="#">
+                            Create account
+                        </a>
+                        <p>
+                            Having issues managing your subscriptions?
+                        </p>
+                        <a href="#">
+                            Click here
+                        </a>
+                    </div>
+                    
                 </form>
             </section>
         </main>
@@ -303,7 +244,7 @@
             </div>
         </footer>
     </div>
-    
+
 
     <script src="assets/index.js"></script>
 </body>
@@ -373,5 +314,8 @@
     </symbol>
     <symbol id="check" viewBox="0 0 24.969 17.969">
         <path id="Shape_593_copy" data-name="Shape 593 copy" class="cls-1" d="M170.263,952.075a0.932,0.932,0,0,1,1.318,0l7.051,7.05a0.932,0.932,0,1,1-1.318,1.318l-7.051-7.05A0.932,0.932,0,0,1,170.263,952.075Zm23.422-8.053a0.932,0.932,0,0,1,0,1.318l-15.1,15.1a0.932,0.932,0,0,1-1.318-1.319l15.1-15.1A0.933,0.933,0,0,1,193.685,944.022Z" transform="translate(-169.5 -943.25)"/>
+    </symbol>
+    <symbol id="see-purple" viewBox="0 0 42 51">
+        <image width="42" height="51" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAzCAMAAADWxGo6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABzlBMVEWFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5iFM5gAAADsQ092AAAAmHRSTlMAKqHJyMeLEifpwwyNhykoLLRXpW5yozF0cLA2Bgh6f7E3d+Tm5+NOfoFx2N3e2UeCfQEEBQKDeTSiOwoLExCIoO3o8+/0c9zh3+wDL3xKF9NMduVJzDIJe7g6gKk1UbOyqA6TpGYkaHUzVLzEv16drq1vwtVkPkE9QkNEQD+bmWtskWeXLVivtW1qlDhpOZJ4vdsRwJaVkJr3A0sAAAABYktHRJkB1jaoAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH5QoeEi0bxcb8gQAAAldJREFUSMetlftXEkEUgC/0kqyEMEOSTURNyZ48koWMqNQyssioyNLKovfDylWjNO25Ldq7++d2Z3aXAxxw54e+w9m9M/sxZx53ZgBs9nXrLdmwcRNAgwOF2NwIW3DrtiYrGpwu3A5ubAIBmnEHtOBOEdWDreDFXSxs89WljX2XcDe0o5+ijkBnPbq695DQg72GGtzbV499+w+QcBAPGSocDtUjHGHfo3jEVK2IokTD6hdRe7EHYijHLUgcHYgfQw8k8XhXSsd8V+M4cTJ1CgdJ7R6yoG/49NAZWq0Y9kcsGAmHIhJXz4oNK0iqUA5EKQcMNZ4oH7PPNEYS8YSvUk2nHOVjDpzTzdHzjpQjcMFYWDtXMxcrGB4z1EudVGD/S1O6uDHLKmvkHeeyUUhjWjQHrmAHXMWciHqNWh3H66Ktxnhfb3gnSkxOTtzM6sKt21TmBaZOcTVZtevv6OpdXshTdI9Wy433KRrIyTkDmfCbU2CTc7I/XKFakqF0+f8q60ALGqOFBw8flXj8pEr18HQx1aflU/BsTdXntNmcJoka6pR4X5/rx5sVEmaoA04RdZo6YMcXLgFekpoUuwqQz8AreUaZVZQZxWBujh7zr+lRKBTezLKfLL8ldUHsLljEd7AkumGWaV4F1SC8xw8UffzkrcT12Yzax9mO+oIqfEWNIvdaY1/krRZpspja6F/RNM2vlVDmNaNiJRsCdg5Mw6poX/M0r4I50EqpLXQOSHTAf8PvxQrUoqqq+eBgvryy+QeOwc9fYimwSjfdqLRUg98L5fz5uxyCf5nxfBZlcoIGAAAAAElFTkSuQmCC"/>
     </symbol>
 </svg>

@@ -2528,6 +2528,9 @@ form.banner-content{
     vertical-align: middle;
     /* display:grid; grid-template-columns: 20% 15% 15% 25% 25%; text-align: right; */
 }
+.cart__row td:first-child{
+    display:flex;
+}
 
 .cart__body .cart__row td,.cart__head .cart__row th{
     border-bottom: 1px solid #434343
@@ -2583,7 +2586,7 @@ form.banner-content{
     padding-top: 100%; position:relative;
 }
 .cart__table .head-img img{
-    position:absolute; width:100%;height:100%;left:0;top: 0; object-fit: contain;
+    position:absolute; width:100%;height:100%;left:0;top: 0; object-fit: cover;
 }
 .cart__quantity button{
     padding:0 2px;
@@ -2647,9 +2650,173 @@ form.banner-content{
     text-align:center;
     padding-bottom: 20px;
 }
-
-
+.cart-form__button-wrap input[type="submit"].submit{
+    border-radius: 2px;
+    border: 1px solid #666;
+    color:#666;
+    cursor: pointer;
+}
+.cart-form__button-wrap input[type="submit"].submit:hover{
+    color: rgb(61, 60, 60);
+}
+@media screen and (max-width: 750px){
+    .product-btn-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .product-btn-more{
+        grid-column-start: auto;
+        grid-column-end:auto
+    }
+    .form-auth,.cart-section{
+        padding:20px;
+    }
+    .btn.start{
+        padding:20px 40px;
+    }
+}
+.cart-page__head {
+    padding-top: 190px;
+}
+@media screen and (max-width:1024px) {
+    .cart-page__head {
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width:770px){
+    #head-quantity , #head-total {
+        display: none
+    }
+    .cart__row{
+        grid-template-columns:auto auto 1fr
+    }
+    .quantity-in-price{
+        padding-top: 15px;
+        display:flex;
+        align-items: center;
+        justify-content:flex-end;
+    }
+    #head-empty{
+        text-align:left;
+        padding-left: 40px;
+    }
+    .cart__body .cart__row td{
+        align-content:flex-start;
+    }
+    .product__cart-cost{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+}
+@media screen and (max-width:480px){
+    .cart__table .head-img__inner{
+        padding-right: 0.5rem;
+    }
+    .product__cart-table__item{
+        column-gap:20px;
+        display:flex;
+    }
+    
+}
 /* cart page end */
+
+
+/* auth */
+
+.form-auth{
+    background-color: #f5dfce;
+    padding:100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height:100%;
+    flex-direction: column;
+}
+.form-auth p {
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.form-auth h1{
+    font-size: 52px;
+    text-transform: uppercase;
+}
+.auth__input-text{
+    padding-top: 50px;
+}
+.auth__input-text label{
+    font-size: 18px;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-regular);
+    text-transform: uppercase;
+}
+.form-auth input[type="text"],.form-auth input[type="password"]{
+    width: 100%;
+    min-width: 280px;
+    padding: 20px 0;
+    background:none;
+    border:none;
+    border-bottom:1px solid #000;
+    outline: none;
+}
+.form-authorization__bottom{
+    margin-top: 30px;
+    text-align: center;
+}
+.form-authorization__bottom input.auth-btn{
+    border-radius: 2px;
+    border: 1px solid #666;
+    color:#666;
+    cursor: pointer;
+}
+.form-authorization__bottom input.auth-btn:hover{
+    color: #434343;
+}
+.form-authorization__bottom input[type="submit"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-authorization__bottom a{
+    font-size: 14px;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-regular);
+    color: var(--green)
+}
+.form-authorization__bottom p{
+    font-size: 18px;
+    font-family: var(--font-quick);
+    font-weight: var(--font-weight-regular);
+    padding-top:25px;
+    padding-bottom: 10px;
+}
+.form-authorization__bottom a:hover{
+    text-decoration: none;
+}
+.auth__input-text input:focus{
+    color: var(--color-green)
+}
+.btn.auth-btn{
+    border: none;
+}
+
+@media screen and (max-width: 750px){
+    .product-btn-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .product-btn-more{
+        grid-column-start: auto;
+        grid-column-end:auto
+    }
+    .form-auth,.cart-section{
+        padding:20px;
+    }
+    .btn.start{
+        padding:20px 40px;
+    }
+}
+
+/* auth end */
+
+
 
 
 /* items */
