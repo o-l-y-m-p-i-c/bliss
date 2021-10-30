@@ -2651,6 +2651,10 @@ form.banner-content{
     padding-bottom: 20px;
 }
 .cart-form__button-wrap input[type="submit"].submit{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
     border-radius: 2px;
     border: 1px solid #666;
     color:#666;
@@ -2763,6 +2767,10 @@ form.banner-content{
     text-align: center;
 }
 .form-authorization__bottom input.auth-btn{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
     border-radius: 2px;
     border: 1px solid #666;
     color:#666;
