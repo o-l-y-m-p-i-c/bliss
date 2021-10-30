@@ -2065,7 +2065,7 @@ form.banner-content{
     font-family: var(--font-motserrat); font-weight: var(--font-weight-medium); font-size: 22px; color:#fff; margin-top: 20px; margin-bottom: 0;
 }
 .review-slider-buttons-wrapper{
-    margin-left: auto; margin-right:auto; max-width: 770px; width: 100%;margin-top: 55px; box-sizing: border-box;
+    margin-left: auto; margin-right:auto; max-width: 770px; width: 100%;padding-top: 55px; box-sizing: border-box;
 }
 .review__item{
     margin-left: auto; margin-right:auto; max-width: 770px; width: 100%; box-sizing: border-box; padding-right: 5.2%;
@@ -2195,7 +2195,7 @@ form.banner-content{
         padding-top: 75px;
     }
     .review-slider-buttons-wrapper {
-        margin-top: 35px;
+        padding-top: 35px;
     }
     .being-social{
         padding-top: 75px;
