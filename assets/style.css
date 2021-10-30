@@ -1747,8 +1747,6 @@ BEING SOCIAL
 .count-wrapper .count input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-.count-wrapper .count{
-}
 .count-wrapper .count button, .count-wrapper .count input{
     width: 33.3333% !important;
 }
