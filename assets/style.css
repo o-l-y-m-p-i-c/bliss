@@ -2073,8 +2073,13 @@ form.banner-content{
 .star-wrapper{
     display: flex; column-gap: 2px; margin-top: 30px;
 }
+.mindful-eating-section{
+    min-height: 813px;
+    position: relative;
+    overflow: hidden;
+}
 .mindful-eating{
-    display: flex; align-items: center; padding-top: 100px; padding-bottom: 100px
+    display: flex; align-items: center; padding-top: 100px; padding-bottom: 150px
 }
 .mindful-eating__right{
     overflow: hidden;
@@ -2105,6 +2110,10 @@ form.banner-content{
 }
 .review__item .star-item svg{
     fill: var(--color-light-blue)
+}
+.reviews-section{
+    position: relative;
+    overflow: hidden;
 }
 .review-author{
     font-family: var(--font-quick); font-size:25px; font-weight: var(--font-weight-semi-bold);color: var(--color-purple); margin:14px 0
@@ -2643,3 +2652,75 @@ form.banner-content{
 
 
 /* cart page end */
+
+
+/* items */
+.bublik-list__wrapper{
+    position: absolute;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    z-index: 0;
+}
+
+.bublik__item{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 85px;
+}
+.bublik__item .bublik{
+    padding-top: 100%;
+}
+ .bublik__item .bublik img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    left: 0;top: 0;
+}
+
+
+.mindful-eating-section .bublik__item:nth-child(1){
+    transform: translate3d(497px,80px,0);
+}
+.mindful-eating-section .bublik__item:nth-child(2){
+    transform: translate3d(-925px,240px,0);
+}
+.mindful-eating-section .bublik__item:nth-child(3){
+    transform: translate3d(728px,260px,0);
+}
+.mindful-eating-section .bublik__item:nth-child(4){
+    transform: translate3d(20px,295px,0);
+}
+.mindful-eating-section .bublik__item:nth-child(5){
+    transform: translate3d(550px,528px,0);
+}
+.mindful-eating-section .bublik__item:nth-child(6){
+    transform: translate3d(820px,611px,0);
+}
+.mindful-eating-section .bublik__item:nth-child(7){
+    transform: translate3d(-830px,690px,0);
+}
+.mindful-eating-section .bublik__item:nth-child(8){
+    transform: translate3d(230px,710px,0);
+}
+
+
+.reviews-section .bublik__item:nth-child(1){
+    transform: translate3d(-400px,10px,0);
+}
+.reviews-section .bublik__item:nth-child(2){
+    transform: translate3d(-860px,50px,0);
+}
+.reviews-section .bublik__item:nth-child(3){
+    transform: translate3d(600px,36px,0);
+}
+.reviews-section .bublik__item:nth-child(4){
+    transform: translate3d(923px,168px,0);
+}
+@media screen and (max-width:1024px) {
+    .bublik-list__wrapper{
+        display: none;
+    }
+}
