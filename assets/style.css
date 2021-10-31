@@ -116,6 +116,9 @@ footer{
 .--blueberry svg{
     fill:#fff
 }
+.--bg-color-pink-deep{
+    background-color: #f8354a;
+}
 .--title.--tuttie-frutti{
     color:#e54360
 }
