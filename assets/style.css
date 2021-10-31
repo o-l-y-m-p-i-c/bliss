@@ -2127,13 +2127,13 @@ form.banner-content{
     font-family: 'Becky Extra'; font-size: 45px; color: var(--color-purple)
 }
 .review-slider-buttons-wrapper .button-slider{
-    display:inline-block; cursor: pointer
+    display:inline-block; cursor: pointer; outline: unset;
 }
 .review-slider-buttons-wrapper .button-slider.button-slider-right{
     margin-left: 33px; transform:scale(-1,1)
 }
 .product-slider-btn{
-    display:none;
+    display:none;outline: unset;
     position: absolute;
     top: 50%; left:0;z-index: 2;
 }
